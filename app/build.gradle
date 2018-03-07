@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "${rootProject.ext.androidBuildToolsVersion}"
+
+    defaultConfig {
+        applicationId "com.beraldo.hpe"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+apply plugin: 'com.neenbedankt.android-apt'
+def AAVersion = '4.1.0'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    compile "com.android.support:appcompat-v7:${rootProject.ext.androidSupportSdkVersion}"
+    compile project(':dlib')
+    compile "com.google.android.gms:play-services:${rootProject.ext.androidPlayServicesVersion}"
+    compile project(':openCVLibrary300')
+    compile 'org.tensorflow:tensorflow-android:+'
+}
+
+apply plugin: 'com.android.application'
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}

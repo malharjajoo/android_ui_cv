@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]
