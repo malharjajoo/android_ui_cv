@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context="com.app.studybuddy.StudySession">
+
+
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pause_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp"
+        android:textColor="#000"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stop_button"
+        android:layout_marginBottom="72dp"
+        android:layout_toLeftOf="@+id/chronometer"
+        android:layout_toStartOf="@+id/chronometer"
+        android:background="@drawable/rounded_button"
+        android:text="Start Session"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/start_button"
+        android:layout_alignBottom="@+id/start_button"
+        android:layout_toEndOf="@+id/chronometer"
+        android:layout_toRightOf="@+id/chronometer"
+        android:background="@drawable/rounded_button"
+        android:text="Pause Session"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stop_button"
+        android:layout_alignBottom="@+id/stop_button"
+        android:layout_alignEnd="@+id/pause_button"
+        android:layout_alignRight="@+id/pause_button"
+        android:background="@drawable/rounded_button"
+        android:text="Reset Session"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/start_button"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/rounded_button"
+        android:text="  Stop Session "
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

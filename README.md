@@ -1,1 +1,2 @@
-# android_ui_cv
+# android_app
+Contains android app code for MHML module
