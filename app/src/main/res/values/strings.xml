@@ -1,6 +1,21 @@
 <resources>
-    <string name="app_name">Android HPE</string>
+    <string name="app_name">StudyBuddy</string>
     <string name="action_settings">Settings</string>
     <string name="request_permission">This application needs camera permission.</string>
     <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <color name="lightblue">#ccccff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#ffff00</color>
+    <color name="pink">#cc6699</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#818C9E</color>
+    <color name="goldenYellow">#ffcc00</color>
+    <string name="username"> Username</string>
+    <string name="password"> Password</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="debugTag">StudyBuddy</string>
+
+
 </resources>

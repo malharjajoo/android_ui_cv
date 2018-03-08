@@ -10,8 +10,8 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="@dimen/general_padding"
-    tools:context="com.beraldo.hpe.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context="com.beraldo.hpe.Permissions"
+    tools:showIn="@layout/activity_permissions">
 
     <TextView
         android:layout_width="match_parent"

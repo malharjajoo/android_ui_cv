@@ -355,7 +355,7 @@ public class CameraConnectionFragment extends Fragment {
         discardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MainActivity.saveFile = false;
+                Permissions.saveFile = false;
                 if(buttonsClickable) getActivity().onBackPressed();
             }
         });

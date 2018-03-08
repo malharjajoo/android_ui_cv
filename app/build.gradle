@@ -42,6 +42,7 @@ def AAVersion = '4.1.0'
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     apt "org.androidannotations:androidannotations:$AAVersion"
     compile "org.androidannotations:androidannotations-api:$AAVersion"
     compile "com.android.support:appcompat-v7:${rootProject.ext.androidSupportSdkVersion}"

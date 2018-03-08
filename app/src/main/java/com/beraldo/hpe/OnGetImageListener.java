@@ -15,7 +15,6 @@ import android.media.Image.Plane;
 import android.media.ImageReader;
 import android.media.ImageReader.OnImageAvailableListener;
 import android.os.Handler;
-import android.os.SystemClock;
 import android.os.Trace;
 import android.util.Log;
 import android.view.Display;
@@ -51,11 +50,6 @@ import com.beraldo.hpe.utils.XMLWriter;
 import com.beraldo.hpe.view.FloatingCameraWindow;
 
 
-import org.opencv.android.BaseLoaderCallback;
-import org.opencv.android.CameraBridgeViewBase;
-import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
-import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
-import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.core.Core;
 import org.opencv.core.CvType;
@@ -67,11 +61,6 @@ import org.opencv.core.Size;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
 import org.opencv.objdetect.Objdetect;
-
-import org.tensorflow.contrib.android.TensorFlowInferenceInterface;
-import org.tensorflow.Graph;
-import org.tensorflow.Operation;
-
 
 
 /**
@@ -239,7 +228,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
         }
 
         // Initialize the headpose detector with its parameters
-        mHeadPoseDetector.init(model.getAbsolutePath(), MainActivity.mode, intrinsics, distortions);
+        mHeadPoseDetector.init(model.getAbsolutePath(), Permissions.mode, intrinsics, distortions);
 
         // Initialize the formatter for the strings to be shown
         df = new DecimalFormat("##.##");
@@ -247,7 +236,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
 
         tStart = System.currentTimeMillis();
 
-        if(MainActivity.saveFile) detectionDocument = XMLWriter.newDocument(MainActivity.mode);
+        if(Permissions.saveFile) detectionDocument = XMLWriter.newDocument(Permissions.mode);
 
         try {
             // load cascade file from application resources
@@ -321,7 +310,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
 
     public void deInitialize() {
         synchronized (OnGetImageListener.this) {
-            if(MainActivity.saveFile) {// Update performance info and save the file
+            if(Permissions.saveFile) {// Update performance info and save the file
                 XMLWriter.addTimePerformance(detectionDocument, overallTime / valid_cycles); // Add performance field
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
                 XMLWriter.saveDocumentToFile(mContext, detectionDocument, "detection_" + sdf.format(new Date(System.currentTimeMillis())) + ".xml");
@@ -784,7 +773,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
                             else
                                 mState = State.NOT_PAYING_ATTENTION;
 
-                            if (MainActivity.saveFile)
+                            if (Permissions.saveFile)
                                 XMLWriter.addResult(detectionDocument, System.currentTimeMillis(), r.getYaw(), r.getPitch(), r.getRoll());
 
                         }
