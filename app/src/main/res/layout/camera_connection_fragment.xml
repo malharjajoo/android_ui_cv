@@ -40,28 +40,26 @@
             android:textSize="@dimen/text_small" />
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="bottom">
-        <Button
-            android:id="@+id/stop_capt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Stop capture"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button"
-            android:textColor="@color/colorButtonText"
-            style="?borderlessButtonStyle" />
 
         <Button
-            android:id="@+id/discard_capt"
-            android:layout_width="wrap_content"
+            android:id="@+id/stop_button"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Discard capture"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button"
-            android:textColor="@color/colorButtonText"
-            style="?borderlessButtonStyle" />
-    </LinearLayout>
+            android:layout_alignLeft="@+id/start_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/start_button"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/rounded_button"
+            android:text="  Stop Session "
+            android:textColor="@color/white" />
+
+
+
+    </RelativeLayout>
 
 </FrameLayout>

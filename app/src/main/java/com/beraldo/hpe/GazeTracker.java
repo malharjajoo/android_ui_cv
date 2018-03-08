@@ -1,6 +1,5 @@
-package com.app.studybuddy;
+package com.beraldo.hpe;
 
-import java.util.Random;
 
 /**
  * Created by malhar on 2/13/18.

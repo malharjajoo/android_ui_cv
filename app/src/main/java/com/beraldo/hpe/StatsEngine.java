@@ -1,12 +1,12 @@
-package com.app.studybuddy;
+package com.beraldo.hpe;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 
 import java.util.List;
-import com.app.studybuddy.StudySession.TimestampedGazeState;
-import com.app.studybuddy.StudySession.TimestampedNoiseData;
-import com.app.studybuddy.GazeTracker.GazeState;
+import com.beraldo.hpe.StudySession.TimestampedGazeState;
+import com.beraldo.hpe.StudySession.TimestampedNoiseData;
+import com.beraldo.hpe.GazeTracker.GazeState;
 /**
  * Created by malhar on 2/15/18.
  */

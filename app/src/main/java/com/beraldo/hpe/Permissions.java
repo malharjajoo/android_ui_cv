@@ -74,43 +74,7 @@ public class Permissions extends AppCompatActivity {
         }
     }
 
-    /**
-     * Called whenever tha radiogroup gets a click on its buttons.
-     * @param view
-     */
-    public void onRadioButtonClicked(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
 
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.radio_pnp:
-                if (checked)
-                    mode = Constants.MODE_ITERATIVE;
-                break;
-            case R.id.radio_p3p:
-                if (checked)
-                    mode = Constants.MODE_P3P;
-                break;
-            case R.id.radio_epnp:
-                if (checked)
-                    mode = Constants.MODE_EPNP;
-                break;
-        }
-    }
-
-    /**
-     * Called whenever the checkbox gets clicked.
-     * @param view
-     */
-    public void onCheckBoxSaveClicked(View view) {
-        boolean checked = ((CheckBox) view).isChecked();
-        switch (view.getId()) {
-            case R.id.check_save:
-                if (checked)
-                    saveFile = true;
-                break;
-        }
-    }
 
     /**
      * Called whenever he launch button gets clicked.

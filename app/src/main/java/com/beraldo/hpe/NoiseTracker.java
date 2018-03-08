@@ -1,4 +1,4 @@
-package com.app.studybuddy;
+package com.beraldo.hpe;
 
 /**
  * Created by malhar on 2/17/18.

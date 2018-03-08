@@ -9,6 +9,7 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.ImageFormat;
 import android.graphics.Matrix;
@@ -58,7 +59,7 @@ public class CameraConnectionFragment extends Fragment {
      * The camera preview size will be chosen to be the smallest frame by pixel size capable of
      * containing a DESIRED_SIZE x DESIRED_SIZE square.
      */
-    private static final int MINIMUM_PREVIEW_SIZE = 320;
+    private static final int MINIMUM_PREVIEW_SIZE = 100;
     private static final String TAG = "CameraConnFragment";
     /**
      * Conversion from screen rotation to JPEG orientation.
@@ -155,7 +156,7 @@ public class CameraConnectionFragment extends Fragment {
 
     private boolean buttonsClickable = false;
     protected Button stopButton;
-    protected Button discardButton;
+
     /**
      * ID of the current {@link CameraDevice}.
      */
@@ -208,6 +209,10 @@ public class CameraConnectionFragment extends Fragment {
      * {@link android.hardware.camera2.CameraDevice.StateCallback}
      * is called when {@link CameraDevice} changes its state.
      */
+
+    private String debugTag;
+
+
     private final CameraDevice.StateCallback stateCallback =
             new CameraDevice.StateCallback() {
                 @Override
@@ -333,13 +338,24 @@ public class CameraConnectionFragment extends Fragment {
 
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
+
+        this.debugTag = getResources().getString(R.string.debugTag);
         return inflater.inflate(R.layout.camera_connection_fragment, container, false);
     }
 
+
+    public void openPermissionsActivity()
+    {
+        Intent intent = new Intent(getActivity(), Permissions_.class );
+        Log.d(debugTag, "Opening Permissions activity ...");
+        startActivity(intent);
+    }
+
+
     @Override
     public void onViewCreated(final View view, final Bundle savedInstanceState) {
-        stopButton = (Button) view.findViewById(R.id.stop_capt);
-        discardButton = (Button) view.findViewById(R.id.discard_capt);
+        stopButton = (Button) view.findViewById(R.id.stop_button);
+
         textureView = (AutoFitTextureView) view.findViewById(R.id.texture);
         mPerformanceView = (TextView) view.findViewById(R.id.performance_tv);
         mResultsView = (TextView) view.findViewById(R.id.results_tv);
@@ -348,17 +364,13 @@ public class CameraConnectionFragment extends Fragment {
         stopButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(buttonsClickable) getActivity().onBackPressed();
+                if(buttonsClickable)
+                {
+                    openPermissionsActivity();
+                }
             }
         });
 
-        discardButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Permissions.saveFile = false;
-                if(buttonsClickable) getActivity().onBackPressed();
-            }
-        });
     }
 
     @Override

@@ -43,9 +43,10 @@
         <activity
             android:name=".Permissions_"
             android:screenOrientation="landscape" />
-        
-        <activity android:name=".SessionCountDown"
-            android:configChanges="orientation|screenSize"></activity>
+        <activity
+            android:name=".SessionCountDown"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".StudySession"></activity>
     </application>
 
 </manifest>
