@@ -1,5 +1,6 @@
 package com.beraldo.hpe;
 
+
 import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
@@ -13,8 +14,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.CheckBox;
-import android.widget.RadioButton;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -30,7 +29,15 @@ import hugo.weaving.DebugLog;
 
 @EActivity(R.layout.activity_permissions)
 public class Permissions extends AppCompatActivity {
-    private static final int REQUEST_CODE_PERMISSION = 2;
+
+    // Noise permission
+    private String [] permissions = {Manifest.permission.RECORD_AUDIO};
+    private static final int REQUEST_RECORD_AUDIO_PERMISSION = 200;
+    private boolean permissionToRecordAccepted = false;
+
+
+
+    private static final int REQUEST_CODE_PERMISSION = 3;
     private static final String TAG = "Permissions";
 
     public static int mode = Constants.MODE_ITERATIVE;
@@ -40,7 +47,8 @@ public class Permissions extends AppCompatActivity {
     private static String[] PERMISSIONS_REQ = {
             Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.CAMERA
+            Manifest.permission.CAMERA,
+            Manifest.permission.RECORD_AUDIO
     };
 
     @ViewById(R.id.toolbar)
@@ -58,10 +66,12 @@ public class Permissions extends AppCompatActivity {
         int write_permission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
         int read_permission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.READ_EXTERNAL_STORAGE);
         int camera_permission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.CAMERA);
+        int audio_permission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.RECORD_AUDIO);
 
         if (write_permission != PackageManager.PERMISSION_GRANTED ||
                 read_permission != PackageManager.PERMISSION_GRANTED ||
-                camera_permission != PackageManager.PERMISSION_GRANTED) {
+                camera_permission != PackageManager.PERMISSION_GRANTED ||
+                audio_permission != PackageManager.PERMISSION_GRANTED) {
             // We don't have permission so prompt the user
             ActivityCompat.requestPermissions(
                     activity,
@@ -74,6 +84,21 @@ public class Permissions extends AppCompatActivity {
         }
     }
 
+
+/*
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        switch (requestCode){
+            case REQUEST_RECORD_AUDIO_PERMISSION:
+                permissionToRecordAccepted  = grantResults[0] == PackageManager.PERMISSION_GRANTED;
+                break;
+        }
+        //if (!permissionToRecordAccepted ) finish();
+
+    }
+*/
 
 
     /**
@@ -99,6 +124,10 @@ public class Permissions extends AppCompatActivity {
         if (currentapiVersion >= Build.VERSION_CODES.M) {
             verifyPermissions(this);
         }
+
+        // Noise permission
+        //ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION);
+
 
         // Create main directory
         File sdcard = Environment.getExternalStorageDirectory();
