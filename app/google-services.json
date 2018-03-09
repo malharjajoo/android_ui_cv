@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "391834905105",
-    "firebase_url": "https://studybuddy-33568.firebaseio.com",
-    "project_id": "studybuddy-33568",
-    "storage_bucket": "studybuddy-33568.appspot.com"
+    "project_number": "450374873786",
+    "firebase_url": "https://studybuddy-706d3.firebaseio.com",
+    "project_id": "studybuddy-706d3",
+    "storage_bucket": "studybuddy-706d3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:391834905105:android:d4df54cb6c32de13",
+        "mobilesdk_app_id": "1:450374873786:android:3515877d1452cd1c",
         "android_client_info": {
-          "package_name": "com.app.studybuddy"
+          "package_name": "com.beraldo.hpe"
         }
       },
       "oauth_client": [
         {
-          "client_id": "391834905105-4b39udrgkbmqe7uj58lu31f1im5moh82.apps.googleusercontent.com",
+          "client_id": "450374873786-a86lh1uuq0l158np2kfv3ei9vdbbo3tv.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.app.studybuddy",
-            "certificate_hash": "3478e845fafba3af15b66c799636053a5c8a6bf5"
+            "package_name": "com.beraldo.hpe",
+            "certificate_hash": "9e056744914304e0cddab2453673c16c373c798b"
           }
         },
         {
-          "client_id": "391834905105-0jm267es4amase5b3kiain8c66gbnn2m.apps.googleusercontent.com",
+          "client_id": "450374873786-eb232osel1bqcrppuh34efhbsumpf6r0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBSeUSlqUl6rrMW2bgr77P2eYQfZhop_7k"
+          "current_key": "AIzaSyA3DEaGJ6PhxM7UPdEYXtWBf48S0lYQXpE"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "391834905105-0jm267es4amase5b3kiain8c66gbnn2m.apps.googleusercontent.com",
+              "client_id": "450374873786-eb232osel1bqcrppuh34efhbsumpf6r0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

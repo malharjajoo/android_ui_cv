@@ -1,3 +1,3 @@
-/home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/rebuild_cache.dir
-/home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/edit_cache.dir
-/home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/native-lib.dir
+/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/edit_cache.dir
+/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/native-lib.dir

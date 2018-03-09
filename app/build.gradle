@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.app.studybuddy"
+        applicationId "com.beraldo.hpe"
         minSdkVersion 24
         targetSdkVersion 26
         versionCode 1

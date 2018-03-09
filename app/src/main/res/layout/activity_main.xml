@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightblue"
-    tools:context="com.app.studybuddy.MainActivity">
+    tools:context="com.beraldo.hpe.MainActivity">
 
     <!--<include layout="@layout/content_main" /> -->
 

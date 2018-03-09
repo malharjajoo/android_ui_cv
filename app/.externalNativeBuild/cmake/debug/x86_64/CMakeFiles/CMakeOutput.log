@@ -1,69 +1,68 @@
 The target system is: Android - 1 - x86_64
-The host system is: Linux - 4.4.0-97-generic - x86_64
+The host system is: Darwin - 17.4.0 - x86_64
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_75739"
-[1/2] Building C object CMakeFiles/cmTC_75739.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_75739
+Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_e7c23"
+[1/2] Building C object CMakeFiles/cmTC_e7c23.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_e7c23
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_11907"
-[1/2] Building C object CMakeFiles/cmTC_11907.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_11907
+Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_dd46b"
+[1/2] Building C object CMakeFiles/cmTC_dd46b.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_dd46b
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 Target: x86_64-none-linux-android
 Thread model: posix
-InstalledDir: /home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin
-Found candidate GCC installation: /home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x
-Selected GCC installation: /home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x
+InstalledDir: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x
+Selected GCC installation: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x
 Candidate multilib: .;@m64
 Candidate multilib: 32;@m32
 Selected multilib: .;@m64
- "/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_11907 /home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64 -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_11907.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o
+ "/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_dd46b /Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_dd46b.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_11907"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_11907.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_11907]
+  ignore line: [Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_dd46b"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_dd46b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_dd46b]
   ignore line: [Android clang version 5.0.300080  (based on LLVM 5.0.300080)]
   ignore line: [Target: x86_64-none-linux-android]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin]
-  ignore line: [Found candidate GCC installation: /home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
-  ignore line: [Selected GCC installation: /home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+  ignore line: [InstalledDir: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
   ignore line: [Candidate multilib: .]
   ignore line: [@m64]
   ignore line: [Candidate multilib: 32]
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_11907 /home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64 -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_11907.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o]
-    arg [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld] ==> ignore
-    arg [--sysroot=/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64] ==> ignore
+  link line: [ "/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_dd46b /Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_dd46b.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o]
+    arg [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64] ==> ignore
     arg [-pie] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_11907] ==> ignore
-    arg [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o] ==> ignore
-    arg [-L/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64] ==> dir [/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64]
-    arg [-L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
-    arg [-L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64] ==> dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64]
-    arg [-L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64] ==> dir [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64]
-    arg [-L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib] ==> dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib]
-    arg [-L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib] ==> dir [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
+    arg [cmTC_dd46b] ==> ignore
+    arg [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64]
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64]
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64]
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib]
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
     arg [--exclude-libs] ==> ignore
     arg [libgcc.a] ==> ignore
     arg [--exclude-libs] ==> ignore
@@ -77,34 +76,34 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_11907.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_dd46b.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o] ==> ignore
+    arg [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64] ==> [/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64] ==> [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/x86_64-linux-android/lib64]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64] ==> [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib64]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib] ==> [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/x86_64-linux-android/lib]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib] ==> [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/x86_64-linux-android/lib64]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib64]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/x86_64-linux-android/lib]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
   implicit libs: [dl;c;dl]
-  implicit dirs: [/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64;/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x;/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/x86_64-linux-android/lib64;/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib64;/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/x86_64-linux-android/lib;/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
+  implicit dirs: [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64;/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x;/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/x86_64-linux-android/lib64;/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib64;/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/x86_64-linux-android/lib;/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7db31"
-[1/2] Building C object CMakeFiles/cmTC_7db31.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_7db31
+Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_170f3"
+[1/2] Building C object CMakeFiles/cmTC_170f3.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_170f3
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -114,11 +113,11 @@ Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7d
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_731a6"
-[1/2] Building C object CMakeFiles/cmTC_731a6.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_731a6
+Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_dc7d2"
+[1/2] Building C object CMakeFiles/cmTC_dc7d2.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_dc7d2
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -128,11 +127,11 @@ Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_73
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_94e65"
-[1/2] Building C object CMakeFiles/cmTC_94e65.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_94e65
+Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_236e3"
+[1/2] Building C object CMakeFiles/cmTC_236e3.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_236e3
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -140,69 +139,68 @@ Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_94
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_9515f"
-[1/2] Building CXX object CMakeFiles/cmTC_9515f.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_9515f
+Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_76f52"
+[1/2] Building CXX object CMakeFiles/cmTC_76f52.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_76f52
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_3e9cb"
-[1/2] Building CXX object CMakeFiles/cmTC_3e9cb.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_3e9cb
+Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_3c4a1"
+[1/2] Building CXX object CMakeFiles/cmTC_3c4a1.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_3c4a1
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 Target: x86_64-none-linux-android
 Thread model: posix
-InstalledDir: /home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin
-Found candidate GCC installation: /home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x
-Selected GCC installation: /home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x
+InstalledDir: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x
+Selected GCC installation: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x
 Candidate multilib: .;@m64
 Candidate multilib: 32;@m32
 Selected multilib: .;@m64
- "/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_3e9cb /home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64 -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_3e9cb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o
+ "/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_3c4a1 /Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_3c4a1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_3e9cb"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_3e9cb.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_3e9cb]
+  ignore line: [Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_3c4a1"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_3c4a1.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_3c4a1]
   ignore line: [Android clang version 5.0.300080  (based on LLVM 5.0.300080)]
   ignore line: [Target: x86_64-none-linux-android]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin]
-  ignore line: [Found candidate GCC installation: /home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
-  ignore line: [Selected GCC installation: /home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+  ignore line: [InstalledDir: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
   ignore line: [Candidate multilib: .]
   ignore line: [@m64]
   ignore line: [Candidate multilib: 32]
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_3e9cb /home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64 -L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_3e9cb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o]
-    arg [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld] ==> ignore
-    arg [--sysroot=/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64] ==> ignore
+  link line: [ "/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_3c4a1 /Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64 -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_3c4a1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o]
+    arg [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64] ==> ignore
     arg [-pie] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_3e9cb] ==> ignore
-    arg [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o] ==> ignore
-    arg [-L/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64] ==> dir [/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64]
-    arg [-L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
-    arg [-L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64] ==> dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64]
-    arg [-L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64] ==> dir [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64]
-    arg [-L/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib] ==> dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib]
-    arg [-L/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib] ==> dir [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
+    arg [cmTC_3c4a1] ==> ignore
+    arg [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64]
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64]
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64]
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib]
+    arg [-L/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib] ==> dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
     arg [--exclude-libs] ==> ignore
     arg [libgcc.a] ==> ignore
     arg [--exclude-libs] ==> ignore
@@ -216,7 +214,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_3e9cb.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_3c4a1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -226,30 +224,30 @@ Parsed CXX implicit link information from above output:
     arg [-lgcc] ==> lib [gcc]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o] ==> ignore
+    arg [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64/crtend_android.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
   remove lib [gcc]
   remove lib [gcc]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64] ==> [/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64] ==> [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/x86_64-linux-android/lib64]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64] ==> [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib64]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib] ==> [/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/x86_64-linux-android/lib]
-  collapse library dir [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib] ==> [/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/x86_64-linux-android/lib64]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib/../lib64] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib64]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/x86_64-linux-android/lib]
+  collapse library dir [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib] ==> [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
   implicit libs: [stdc++;m;dl;c;dl]
-  implicit dirs: [/home/human/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64;/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x;/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/x86_64-linux-android/lib64;/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib64;/home/human/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/x86_64-linux-android/lib;/home/human/Android/Sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
+  implicit dirs: [/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64;/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x;/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/x86_64-linux-android/lib64;/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib64;/Users/Afrazinator/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/x86_64-linux-android/lib;/Users/Afrazinator/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-x86_64/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_bb67d"
-[1/2] Building CXX object CMakeFiles/cmTC_bb67d.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_bb67d
+Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_f6606"
+[1/2] Building CXX object CMakeFiles/cmTC_f6606.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_f6606
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -312,11 +310,11 @@ Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_bb
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7b265"
-[1/2] Building CXX object CMakeFiles/cmTC_7b265.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_7b265
+Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_e9f68"
+[1/2] Building CXX object CMakeFiles/cmTC_e9f68.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_e9f68
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -379,11 +377,11 @@ Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7b
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_2303f"
-[1/2] Building CXX object CMakeFiles/cmTC_2303f.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_2303f
+Run Build Command:"/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja" "cmTC_d373e"
+[1/2] Building CXX object CMakeFiles/cmTC_d373e.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_d373e
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

@@ -8,7 +8,7 @@
     android:orientation="horizontal"
     android:theme="@style/notitle"
     android:background="@color/lightblue"
-    tools:context="com.app.studybuddy.SessionSummary">
+    tools:context="com.beraldo.hpe.SessionSummary">
 
 
 

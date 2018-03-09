@@ -1,15 +1,15 @@
-Executable : /home/human/Android/Sdk/cmake/3.6.4111459/bin/cmake
+Executable : /Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/cmake
 arguments : 
--H/home/human/malhar_stefan/MHML/app
--B/home/human/malhar_stefan/MHML/app/.externalNativeBuild/cmake/release/x86
+-H/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app
+-B/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/.externalNativeBuild/cmake/release/x86
 -DANDROID_ABI=x86
 -DANDROID_PLATFORM=android-24
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/human/malhar_stefan/MHML/app/build/intermediates/cmake/release/obj/x86
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/cmake/release/obj/x86
 -DCMAKE_BUILD_TYPE=Release
--DANDROID_NDK=/home/human/Android/Sdk/ndk-bundle
+-DANDROID_NDK=/Users/Afrazinator/Library/Android/sdk/ndk-bundle
 -DCMAKE_CXX_FLAGS=
--DCMAKE_TOOLCHAIN_FILE=/home/human/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake
--DCMAKE_MAKE_PROGRAM=/home/human/Android/Sdk/cmake/3.6.4111459/bin/ninja
+-DCMAKE_TOOLCHAIN_FILE=/Users/Afrazinator/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/Afrazinator/Library/Android/sdk/cmake/3.6.3155560/bin/ninja
 -GAndroid Gradle - Ninja
 jvmArgs : 
 
