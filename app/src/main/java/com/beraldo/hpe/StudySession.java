@@ -269,12 +269,6 @@ public class StudySession extends AppCompatActivity {
 
         }
 
-        // starts a countdown timer of 15s before session is started
-        public void startCountdownTimer()
-        {
-
-
-        }
 
         // On start button click, initialize session
         // and sensors
@@ -328,8 +322,7 @@ public class StudySession extends AppCompatActivity {
                 //For now only filling Stats Data. Add other sensors summary later.
                 Summary summary = new Summary(statsSummary,sessionDuration);
 
-                //sendSummaryForDisplay(summary);
-                openPermissionsActivity();
+                sendSummaryForDisplay(summary);
 
                 Log.d(debugTag, "Session Stopped ! ...");
             }
@@ -337,14 +330,8 @@ public class StudySession extends AppCompatActivity {
 
         }
 
-        public void openPermissionsActivity()
-        {
-            Intent intent = new Intent(StudySession.this, Permissions_.class );
-            Log.d(debugTag, "Opening Permissions activity ...");
-            startActivity(intent);
-        }
 
-        /*
+
         // Summary is sent for display (after the session is stopped)
         public void sendSummaryForDisplay(Summary summary)
         {
@@ -352,7 +339,7 @@ public class StudySession extends AppCompatActivity {
             intent.putExtra("Summary",summary);
             startActivity(intent);
         }
-        */
+
 
         // This method keeps polling the sensors at a certain rate.
         // It appends the timer values to the .

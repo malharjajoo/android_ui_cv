@@ -12,10 +12,13 @@ import android.widget.Toast;
 public class CameraActivity extends Activity {
 
     private static int OVERLAY_PERMISSION_REQ_CODE = 1;
+    private String debugTag;
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.debugTag = getResources().getString(R.string.debugTag);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         setContentView(R.layout.activity_camera);

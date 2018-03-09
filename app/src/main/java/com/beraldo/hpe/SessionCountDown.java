@@ -112,7 +112,7 @@ public class SessionCountDown extends AppCompatActivity {
         this.debugTag = getResources().getString(R.string.debugTag);
 
         // Create countdown timer
-        long countdown_ms = 15000;
+        long countdown_ms = 5000;
         this.timer = new Timer(countdown_ms);
 
         // cache XML layout elements..

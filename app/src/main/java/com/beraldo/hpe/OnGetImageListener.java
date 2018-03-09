@@ -31,6 +31,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Array;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -67,6 +68,10 @@ import org.opencv.objdetect.Objdetect;
  * Class that takes in preview frames and converts the image to Bitmaps to process with dlib lib.
  */
 public class OnGetImageListener implements OnImageAvailableListener {
+
+    public ArrayList<State> cv_data;
+    private String debugTag;
+
     private static final int NUM_CLASSES = 1001;
     private static final int INPUT_SIZE = 240;
     private static final int IMAGE_MEAN = 117;
@@ -76,7 +81,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
     private static final double minYaw = -20;
     private static final double minPitch = -10;
 
-    private enum State {NOT_THERE, NOT_PAYING_ATTENTION, PAYING_ATTENTION};
+    public enum State {NOT_THERE, NOT_PAYING_ATTENTION, PAYING_ATTENTION};
     private State mState = State.PAYING_ATTENTION;
     private State mPreviousState = State.PAYING_ATTENTION;
     private State mOutputState = State.PAYING_ATTENTION;
@@ -201,7 +206,17 @@ public class OnGetImageListener implements OnImageAvailableListener {
         System.loadLibrary("tensorflow_inference");
     }
 
+
+    public ArrayList<State> getStateList()
+    {
+        return this.cv_data;
+    }
+
     public void initialize( final Context context, final float[] intrinsics, final float[] distortions, final TextView mPerformanceView, final TextView mResultsView, final Handler handler) {
+        this.cv_data = new ArrayList<State>();
+        this.debugTag = "StudyBuddy";
+
+
         this.mContext = context;
         this.mPerformanceView = mPerformanceView;
         this.mResultsView = mResultsView;
@@ -813,7 +828,15 @@ public class OnGetImageListener implements OnImageAvailableListener {
 
                         mWindow.setRGBBitmap(mRGBrotatedBitmap);
                         mIsComputing = false;
+
+
+
+                        cv_data.add(mOutputState);
+                        Log.d(debugTag,"cv data =" + cv_data.get(cv_data.size()-1));
+
                     }
+
+
                 });
 
         Trace.endSection();

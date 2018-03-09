@@ -29,6 +29,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.os.SystemClock;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.util.Size;
@@ -39,11 +42,15 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Chronometer;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -54,7 +61,333 @@ import java.util.concurrent.TimeUnit;
 import com.beraldo.hpe.utils.XMLReader;
 import com.beraldo.hpe.view.AutoFitTextureView;
 import hugo.weaving.DebugLog;
+
+
+
+
+
+
+
+
+
+
+
 public class CameraConnectionFragment extends Fragment {
+
+
+    private MySession mySession;
+    private String debugTag;
+    public enum SessionState {CREATED, STARTED, PAUSED, STOPPED;}
+
+    // Data obtained from CV module.
+    public class TimestampedGazeState
+    {
+        public OnGetImageListener.State state;
+        public String time;
+
+        public TimestampedGazeState(OnGetImageListener.State state, String time)
+        {
+            this.state = state;
+            this.time = time;
+        }
+    }
+
+    // Data obtained from Noise Tracker.
+    public class TimestampedNoiseData
+    {
+        public NoiseTracker.NoiseData noiseData;
+        public String time;
+
+        public TimestampedNoiseData(NoiseTracker.NoiseData noiseData, String time)
+        {
+            this.noiseData = noiseData;
+            this.time = time;
+        }
+
+        public NoiseTracker.NoiseData getNoiseData()
+        {
+            return noiseData;
+        }
+    }
+
+
+    // Abstract away details of time calculations.
+    // Uses a chronometer variable to handle the calculations.
+    // Can also handle pausing and re-starting the session.
+    public class Timer
+    {
+        private Chronometer chrono;
+
+        // used to enable pausing functionality
+        public long lastPause;
+
+        public long duration;
+        // private String startTime;
+        //private String endTime;
+
+        public Timer(Chronometer chrono)
+        {
+            this.duration = 0;
+            this.chrono = chrono;
+        }
+
+        // returns time duration in string format.
+        public String getDuration()
+        {
+            String duration="";
+
+            try {
+
+                long diff = this.duration;
+
+                long diffSeconds = diff / 1000 % 60;
+                long diffMinutes = diff / (60 * 1000) % 60;
+                long diffHours = diff / (60 * 60 * 1000) % 24;
+                //long diffDays = diff / (24 * 60 * 60 * 1000);
+
+                duration = Long.toString(diffHours) +":"
+                        + Long.toString(diffMinutes)+":"
+                        + Long.toString(diffSeconds);
+
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            return duration;
+        }
+
+
+        // Helper functions
+        // Time related functions, currently return as string
+        // but can be changed to a numeric format if required.
+        // Simply combination of getDate() and getCurrentTime().
+        public String getDateAndTime()
+        {
+            return new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
+        }
+
+        public String getDate()
+        {
+            // can change format if required by simply altering string.
+            return new SimpleDateFormat("dd/MM/yyyy").format(Calendar.getInstance().getTime());
+        }
+        public String getCurrentTime()
+        {
+            return new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime());
+        }
+
+
+    }
+
+
+    // Android Parcelable needs to be implemented to pass data between activities.
+    // It is an (optimized) alternative to Java Serializable. Check link below.
+    // https://stackoverflow.com/questions/3323074/android-difference-between-parcelable-and-serializable
+    public static class Summary implements Parcelable
+    {
+        //TODO: add other sensors later.
+        public StatsEngine.StatsSummary statsSummary;
+        public String sessionDuration;
+
+        //TODO: add other sensors later.
+        public Summary(StatsEngine.StatsSummary statsSummary, String sessionDuration)
+        {
+            this.statsSummary = statsSummary;
+            this.sessionDuration = sessionDuration;
+        }
+
+
+        protected Summary(Parcel in) {
+            statsSummary = in.readParcelable(StatsEngine.StatsSummary.class.getClassLoader());
+            sessionDuration = in.readString();
+        }
+
+        public static Creator<Summary> CREATOR = new Creator<Summary>() {
+            @Override
+            public Summary createFromParcel(Parcel in) {
+                return new Summary(in);
+            }
+
+            @Override
+            public Summary[] newArray(int size) {
+                return new Summary[size];
+            }
+        };
+
+        @Override
+        public int describeContents() {
+            return 0;
+        }
+
+        @Override
+        public void writeToParcel(Parcel parcel, int i) {
+            parcel.writeParcelable(statsSummary, i);
+            parcel.writeString(sessionDuration);
+        }
+    }
+
+
+    // This class encapsulates a timer, associated buttons
+    // and interaction with the sensors.
+    public class MySession
+    {
+        // Can place this in an inner class later.
+        private Button stopButton;
+        private Timer timer;
+
+        private StudySession.SessionState sessionState;
+
+
+        private ArrayList<OnGetImageListener.State> cv_data_raw; // reference to CV module
+        private ArrayList<Integer> noise_data_raw; //reference to Mic module.
+
+        //private StatsEngine statsEngine;
+        private List<TimestampedGazeState> cv_data;
+        private List<TimestampedNoiseData> noise_data;
+
+
+
+        public void initializeSession()
+        {
+            this.sessionState = StudySession.SessionState.CREATED;
+            this.timer = new Timer( (Chronometer) findViewById(R.id.chronometer) );
+            this.initializeButtons();
+        }
+
+        public void initializeButtons()
+        {
+
+            this.stopButton = (Button) findViewById(R.id.stop_button);
+            this.stopButton.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View view) {
+
+                    // send to stats engine
+                    Log.d(debugTag, "Stop button pressed.");
+
+                    // find session duration and stop timer.
+                    timer.duration = timer.duration + SystemClock.elapsedRealtime() - timer.chrono.getBase();
+                    timer.chrono.stop();
+                    timer.chrono.setBase(SystemClock.elapsedRealtime());
+
+                    // access CV values
+                    ArrayList<OnGetImageListener.State> cv_data = mOnGetPreviewListener.getStateList();
+                    // TODO: get values of the noise tracker !
+                    //for(int i =0, len = cv_data.size(); i < len ; ++i) {Log.d(debugTag, "cvdata = " + cv_data.get(i));}
+
+                    appendTimeStamp();
+                    Log.d(debugTag, "Finished collecting sensor data ...");
+                    stopSession();
+
+                }
+            });
+        }
+
+
+        // This method keeps polling the sensors at a certain rate.
+        // It appends the timer values to the .
+        public void appendTimeStamp()
+        {
+            List cv_data = new ArrayList<TimestampedGazeState>();
+            // TODO: separate noise sensor data from CV sensors if different frequency required ?
+            List noise_data = new ArrayList<TimestampedNoiseData>();
+
+
+            // keep polling CV and sensor module at a certain frequency
+            // TODO: What should be the frequency? and how to enforce it ? will depend on each sensor ...
+            for(int i=0; i < 100 ; ++i)
+            {
+                String time = this.timer.getCurrentTime();
+                cv_data.add(new TimestampedGazeState(cv_data_raw.get(i),time));
+                noise_data.add(new TimestampedNoiseData(noise_data_raw.get(i),time));
+            }
+
+            this.cv_data = cv_data;
+            this.noise_data = noise_data;
+        }
+
+
+
+        public void startBackgroundThread()
+        {
+            // start noise servivce
+            Intent recorderIntent = new Intent(getActivity(),NoiseRecorder.class);
+            getActivity().startService(recorderIntent);
+        }
+
+
+        public void stopBackgroundThread()
+        {
+            // stop noise servivce
+            Intent recorderIntent = new Intent(getActivity(), NoiseRecorder.class);
+            getActivity().stopService(recorderIntent);
+        }
+
+
+        // On start button click, initialize session
+        // and sensors
+        public void startSession()
+        {
+            // Extra layer of safety. Already ensured by disabling appropriate button.
+            // Ensure state change is appropriate.
+            if(sessionState == StudySession.SessionState.CREATED)
+            {
+                this.sessionState = StudySession.SessionState.STARTED;
+                Log.d(debugTag, "Session started ...");
+
+            }
+
+        }
+
+
+        // On stop button click.
+        public void stopSession()
+        {
+            if(this.sessionState == StudySession.SessionState.STARTED)
+            {
+                String sessionDuration = this.timer.getDuration();
+
+                // TODO: If using background threads, signal sensors to STOP.
+
+                this.sessionState = StudySession.SessionState.STOPPED;
+
+                // Pass on data to Summary Activity.
+                // need to serialize the Summary Object and pass.
+                StatsEngine statsEngine = new StatsEngine();
+                StatsEngine.StatsSummary statsSummary = statsEngine.getSummary(this.cv_data, this.noise_data);
+
+                //For now only filling Stats Data. Add other sensors summary later.
+                Summary summary = new Summary(statsSummary,sessionDuration);
+
+                sendSummaryForDisplay(summary);
+
+                Log.d(debugTag, "Session Stopped ! ...");
+            }
+
+
+        }
+
+
+
+        // Summary is sent for display (after the session is stopped)
+        public void sendSummaryForDisplay(Summary summary)
+        {
+            Intent intent = new Intent(StudySession.this, SessionSummary.class );
+            intent.putExtra("Summary",summary);
+            startActivity(intent);
+        }
+
+
+
+
+
+    }
+
+
+
+    //========================= CV code =========================
+
+
     /**
      * The camera preview size will be chosen to be the smallest frame by pixel size capable of
      * containing a DESIRED_SIZE x DESIRED_SIZE square.
@@ -155,7 +488,6 @@ public class CameraConnectionFragment extends Fragment {
     private TextView mInfoView;
 
     private boolean buttonsClickable = false;
-    protected Button stopButton;
 
     /**
      * ID of the current {@link CameraDevice}.
@@ -210,7 +542,6 @@ public class CameraConnectionFragment extends Fragment {
      * is called when {@link CameraDevice} changes its state.
      */
 
-    private String debugTag;
 
 
     private final CameraDevice.StateCallback stateCallback =
@@ -344,32 +675,18 @@ public class CameraConnectionFragment extends Fragment {
     }
 
 
-    public void openPermissionsActivity()
-    {
-        Intent intent = new Intent(getActivity(), Permissions_.class );
-        Log.d(debugTag, "Opening Permissions activity ...");
-        startActivity(intent);
-    }
-
-
     @Override
     public void onViewCreated(final View view, final Bundle savedInstanceState) {
-        stopButton = (Button) view.findViewById(R.id.stop_button);
+        Log.d(debugTag, "Started integrated StudySession  ...");
+
+        this.mySession = new MySession();
+        // intializes session state and button event handlers.
+        mySession.initializeSession();
 
         textureView = (AutoFitTextureView) view.findViewById(R.id.texture);
         mPerformanceView = (TextView) view.findViewById(R.id.performance_tv);
         mResultsView = (TextView) view.findViewById(R.id.results_tv);
         mInfoView = (TextView) view.findViewById(R.id.info_tv);
-
-        stopButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(buttonsClickable)
-                {
-                    openPermissionsActivity();
-                }
-            }
-        });
 
     }
 
@@ -382,6 +699,7 @@ public class CameraConnectionFragment extends Fragment {
     public void onResume() {
         super.onResume();
         startBackgroundThread();
+        this.mySession.startBackgroundThread();
 
         // When the screen is turned off and turned back on, the SurfaceTexture is already
         // available, and "onSurfaceTextureAvailable" will not be called. In that case, we can open
@@ -398,6 +716,7 @@ public class CameraConnectionFragment extends Fragment {
     public void onPause() {
         closeCamera();
         stopBackgroundThread();
+        this.mySession.stopBackgroundThread();
         super.onPause();
     }
 
@@ -556,6 +875,7 @@ public class CameraConnectionFragment extends Fragment {
         inferenceThread = new HandlerThread("InferenceThread");
         inferenceThread.start();
         inferenceHandler = new Handler(inferenceThread.getLooper());
+
     }
 
     /**
