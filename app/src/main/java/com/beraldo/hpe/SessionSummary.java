@@ -6,8 +6,10 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Description;
@@ -25,6 +27,7 @@ public class SessionSummary extends AppCompatActivity {
 
 
     private String debugTag;
+    private Button navigationButton;
 
 
     @Override
@@ -33,12 +36,14 @@ public class SessionSummary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.debugTag = getResources().getString(R.string.debugTag);
 
+
         //Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //  activity_navigationsidebar
         setContentView(R.layout.activity_session_summary);
+        this.navigationButton = (Button) findViewById(R.id.homebutton);
 
         // Get data from session
         Intent in = getIntent();
@@ -60,7 +65,18 @@ public class SessionSummary extends AppCompatActivity {
             // Find the piechart from xml layout file.
             PieChart pieChart = (PieChart) findViewById(R.id.chart);
             setChartData(summary, pieChart);
+
+
+
         }
+
+        // Move to navigation menu.
+        this.navigationButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                openNavigationDrawerActivity();
+            }
+        });
 
 
     }
@@ -103,6 +119,14 @@ public class SessionSummary extends AppCompatActivity {
         pieChart.setData(data);
         pieChart.invalidate();
 
-
     }
+
+    public void openNavigationDrawerActivity()
+    {
+        Intent intent = new Intent(this, NavigationDrawer.class );
+        Log.d(debugTag, "Opening NvaigationDrawer activity ...");
+        startActivity(intent);
+    }
+
+
 }

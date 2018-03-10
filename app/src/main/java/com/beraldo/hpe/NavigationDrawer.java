@@ -101,6 +101,7 @@ public class NavigationDrawer extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_history) {
+            openSessionHistoryActivity();
 
         }  else if (id == R.id.nav_slideshow) {
 
@@ -124,6 +125,12 @@ public class NavigationDrawer extends AppCompatActivity
     {
         Intent intent = new Intent(this, SessionCountDown.class );
         Log.d(debugTag, "Starting Countdown activity ...");
+        startActivity(intent);
+    }
+
+    public void openSessionHistoryActivity()
+    {
+        Intent intent = new Intent(this,SessionHistory.class);
         startActivity(intent);
     }
 

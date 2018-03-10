@@ -1,49 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="horizontal"
-android:theme="@style/notitle"
-android:background="@color/lightblue"
-tools:context="com.beraldo.hpe.SessionSummary">
 
 
 
-<com.github.mikephil.charting.charts.PieChart
-    android:id="@+id/chart"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="1" />
+    android:background="@color/lightblue"
+    tools:context="com.beraldo.hpe.CameraConnectionFragment"
+    >
+
+ <LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="300dp"
+  android:orientation="horizontal"
+  android:theme="@style/notitle"
+  android:background="@color/lightblue"
+  tools:context="com.beraldo.hpe.SessionSummary"
+
+   android:id="@+id/sessionsummarycontainer">
 
 
- <!--<com.airbnb.lottie.LottieAnimationView
-    android:id="@+id/animation_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="1"
-    app:lottie_autoPlay="true"
-    app:lottie_fileName="beatingheart.json"
-    app:lottie_loop="true" />-->
+  <com.github.mikephil.charting.charts.PieChart
+      android:id="@+id/chart"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1" />
+
+   <!--<com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/animation_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      app:lottie_autoPlay="true"
+      app:lottie_fileName="beatingheart.json"
+      app:lottie_loop="true" /> -->
 
 
- <ImageView
-     android:id="@+id/image_heart"
-     android:layout_width="match_parent"
-     android:layout_height="match_parent"
-     android:layout_weight="1"
-     app:srcCompat="@drawable/heart" />
+  <ImageView
+       android:id="@+id/image_heart"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/heart" />
 
 
 
-<ImageView
-    android:id="@+id/imageView3"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="1"
-    app:srcCompat="@drawable/speaker" />
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      app:srcCompat="@drawable/speaker" />
 
 
-</LinearLayout>
+ </LinearLayout>
+
+ <Button
+     android:id="@+id/homebutton"
+     android:layout_width="150dp"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/sessionsummarycontainer"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="30dp"
+     android:text="Home"
+     android:textColor="@color/white"
+     android:background="@drawable/rounded_button"
+     android:elevation="20dp"/>
+
+ 
+
+</RelativeLayout>

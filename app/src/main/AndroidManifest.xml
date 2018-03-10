@@ -54,8 +54,11 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".SessionSummary" />
-        <activity android:name=".NavigationDrawer"></activity>
+        <activity
+            android:name=".SessionSummary"
+            android:screenOrientation="landscape" />
+        <activity android:name=".NavigationDrawer" />
+        <activity android:name=".SessionHistory"></activity>
     </application>
 
 </manifest>

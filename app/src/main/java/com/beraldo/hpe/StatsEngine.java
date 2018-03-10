@@ -73,9 +73,9 @@ public class StatsEngine
     public static class StatsSummary implements Parcelable
     {
         // session data
-        String startTime;
-        String sessionDuration;
-        String description;
+        public String startTime;
+        public String sessionDuration;
+        public String description;
 
         // outputs from CV module for pie chart
         public float focussed_percent ;
@@ -85,6 +85,11 @@ public class StatsEngine
         // output from noise tracker
         public float avg_noise;
 
+
+        public StatsSummary()
+        {
+
+        }
 
         public StatsSummary(float focussed_percent,float distracted_percent,
                             float notPresent , float avgNoise, String description,

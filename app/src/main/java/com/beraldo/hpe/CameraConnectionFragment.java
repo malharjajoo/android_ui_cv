@@ -56,14 +56,20 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
 
 import com.beraldo.hpe.utils.XMLReader;
 import com.beraldo.hpe.view.AutoFitTextureView;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import hugo.weaving.DebugLog;
+import com.beraldo.hpe.StatsEngine.StatsSummary;
 
 
 
@@ -94,6 +100,7 @@ public class CameraConnectionFragment extends Fragment {
 
 
 
+    // Abstract away details of time calculations.
     // Abstract away details of time calculations.
     // Uses a chronometer variable to handle the calculations.
     // Can also handle pausing and re-starting the session.
@@ -170,10 +177,10 @@ public class CameraConnectionFragment extends Fragment {
     public static class Summary implements Parcelable
     {
 
-        public StatsEngine.StatsSummary statsSummary;
+        public StatsSummary statsSummary;
         public String sessionDuration;
 
-        public Summary(StatsEngine.StatsSummary statsSummary, String sessionDuration)
+        public Summary(StatsSummary statsSummary, String sessionDuration)
         {
             this.statsSummary = statsSummary;
             this.sessionDuration = sessionDuration;
@@ -181,7 +188,7 @@ public class CameraConnectionFragment extends Fragment {
 
 
         protected Summary(Parcel in) {
-            statsSummary = in.readParcelable(StatsEngine.StatsSummary.class.getClassLoader());
+            statsSummary = in.readParcelable(StatsSummary.class.getClassLoader());
             sessionDuration = in.readString();
         }
 
@@ -312,11 +319,11 @@ public class CameraConnectionFragment extends Fragment {
                 // Pass on data to Summary Activity.
                 // need to serialize the Summary Object and pass.
                 StatsEngine statsEngine = new StatsEngine();
-                StatsEngine.StatsSummary statsSummary = statsEngine.getSummary(this.cv_data_raw, noise_data_raw,
-                                                                            this.sessionStartTime,this.sessionDuration);
+                StatsSummary statsSummary = statsEngine.getSummary(this.cv_data_raw, noise_data_raw,
+                                                                   this.sessionStartTime,this.sessionDuration);
 
-                //Send data to Firebase.
-                // storeToFirebase(statsSummary);
+                //Send session summary to Firebase.
+                storeToFirebase(statsSummary);
 
                 sendSummaryForDisplay(statsSummary);
 
@@ -325,15 +332,23 @@ public class CameraConnectionFragment extends Fragment {
 
         }
 
-        /*
-        public void storeToFirebase(StatsEngine.StatsSummary statsSummary)
+
+        public void storeToFirebase(StatsSummary statsSummary)
         {
 
+            FirebaseDatabase database = FirebaseDatabase.getInstance();
+            final DatabaseReference myRef = database.getReference("StudyBuddy");
+
+            //final Map<String, StatsSummary> map = new HashMap<>();
+            //map.put("SessionSummary", statsSummary);
+
+            Log.d(debugTag, "Storing to dataabse");
+            myRef.push().setValue(statsSummary);
         }
-        */
+
 
         // Summary is sent for display (after the session is stopped)
-        public void sendSummaryForDisplay(StatsEngine.StatsSummary summary)
+        public void sendSummaryForDisplay(StatsSummary summary)
         {
             Log.d(debugTag,"Sending summary for display now..");
 
