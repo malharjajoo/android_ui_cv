@@ -45,7 +45,7 @@
         android:ems="10"
         android:inputType="textPassword"
         android:hint="@string/password"
-        android:drawableLeft="@drawable/lock"/>
+        android:drawableLeft="@drawable/ic_action_lock"/>
 
     <Button
         android:id="@+id/loginbutton"

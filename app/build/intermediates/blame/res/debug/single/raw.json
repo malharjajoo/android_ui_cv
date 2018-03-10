@@ -4,10 +4,6 @@
         "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/raw/haarcascade_frontalface_alt.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
-        "source": "/home/human/.android/build-cache/c5289d4bac755d07ed0122f109e67cbe9154c20f/output/res/raw/gtm_analytics"
-    },
-    {
         "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/raw/lbpcascade_frontalface.xml",
         "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/raw/lbpcascade_frontalface.xml"
     },

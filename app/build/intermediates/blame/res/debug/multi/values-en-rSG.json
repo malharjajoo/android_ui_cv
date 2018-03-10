@@ -11,13 +11,13 @@
                     "endOffset": 154
                 },
                 "from": {
-                    "file": "/home/human/.android/build-cache/51bee7d2c9a7603afd8c4e798b69480ecadbb212/output/res/values-en-rSG/values.xml",
+                    "file": "/home/human/.android/build-cache/f3b4848d5b1ba78044a7b3af8dd20c964d23fbc7/output/res/values-en-rSG/values.xml",
                     "position": {
                         "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 304,
-                        "endColumn": 103,
-                        "endOffset": 403
+                        "startColumn": 0,
+                        "startOffset": 242,
+                        "endColumn": 99,
+                        "endOffset": 341
                     }
                 }
             }

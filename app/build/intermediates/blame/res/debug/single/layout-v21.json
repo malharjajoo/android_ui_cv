@@ -1,6 +1,22 @@
 [
     {
+        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/human/.android/build-cache/35237561f7eabfe1b8843b96813d78a00be9f807/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/human/.android/build-cache/35237561f7eabfe1b8843b96813d78a00be9f807/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
         "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
-        "source": "/home/human/.android/build-cache/c5e675fab6f7d6e5ba7b8a45b8a2b967e13ac2f9/output/res/layout-v21/place_autocomplete_fragment.xml"
+        "source": "/home/human/.android/build-cache/bedb5358cec847810945aaa65a1a6d27db7be379/output/res/layout-v21/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/human/.android/build-cache/35237561f7eabfe1b8843b96813d78a00be9f807/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/human/.android/build-cache/35237561f7eabfe1b8843b96813d78a00be9f807/output/res/layout-v21/notification_action.xml"
     }
 ]
