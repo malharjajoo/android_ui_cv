@@ -52,7 +52,8 @@ dependencies {
     compile 'org.tensorflow:tensorflow-android:+'
 
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
-    compile ('com.airbnb.android:lottie:2.5.0'){ exclude group: 'com.android.support' }
+    compile('com.airbnb.android:lottie:2.5.0') { exclude group: 'com.android.support' }
+    compile 'com.android.support:design:24.2.1'
 
 }
 

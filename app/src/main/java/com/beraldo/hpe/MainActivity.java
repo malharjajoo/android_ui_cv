@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                openCountDownActivity();
+                openNavigationDrawerActivity();
             }
         });
 
@@ -39,10 +39,10 @@ public class MainActivity extends AppCompatActivity {
      */
     //public native String stringFromJNI();
 
-    public void openCountDownActivity()
+    public void openNavigationDrawerActivity()
     {
-        Intent intent = new Intent(MainActivity.this, SessionCountDown.class );
-        Log.d(debugTag, "Opening StudySession activity ...");
+        Intent intent = new Intent(MainActivity.this, NavigationDrawer.class );
+        Log.d(debugTag, "Opening NvaigationDrawer activity ...");
         startActivity(intent);
     }
 

@@ -70,6 +70,10 @@ public class SessionCountDown extends AppCompatActivity {
             this.countdownTextview.setText(timeLeftFormatted);
         }
 
+        public void cancelTimer()
+        {
+            this.countDownTimer.cancel();
+        }
         // on reset button click
         public void resetTimer()
         {
@@ -128,6 +132,17 @@ public class SessionCountDown extends AppCompatActivity {
         */
 
     }
+
+
+    // make sure to do this otherwise next activity will be triggered.
+    @Override
+    public void onPause()
+    {
+        super.onPause();
+        this.timer.cancelTimer();
+    }
+
+
 
 
     /*

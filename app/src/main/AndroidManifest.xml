@@ -54,7 +54,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".SessionSummary"></activity>
+        <activity android:name=".SessionSummary" />
+        <activity android:name=".NavigationDrawer"></activity>
     </application>
 
 </manifest>
