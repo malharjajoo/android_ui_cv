@@ -50,6 +50,10 @@ dependencies {
     compile "com.google.android.gms:play-services:${rootProject.ext.androidPlayServicesVersion}"
     compile project(':openCVLibrary300')
     compile 'org.tensorflow:tensorflow-android:+'
+
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    compile ('com.airbnb.android:lottie:2.5.0'){ exclude group: 'com.android.support' }
+
 }
 
 apply plugin: 'com.android.application'

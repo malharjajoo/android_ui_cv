@@ -1,22 +1,22 @@
 [
     {
-        "merged": "/home/human/malhar_stefan/MHML/app/build/intermediates/res/merged/debug/raw/haarcascade_lefteye_2splits.xml",
-        "source": "/home/human/malhar_stefan/MHML/app/src/main/res/raw/haarcascade_lefteye_2splits.xml"
+        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/raw/haarcascade_frontalface_alt.xml",
+        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/raw/haarcascade_frontalface_alt.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/MHML/app/build/intermediates/res/merged/debug/raw/lbpcascade_frontalface.xml",
-        "source": "/home/human/malhar_stefan/MHML/app/src/main/res/raw/lbpcascade_frontalface.xml"
-    },
-    {
-        "merged": "/home/human/malhar_stefan/MHML/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
+        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
         "source": "/home/human/.android/build-cache/c5289d4bac755d07ed0122f109e67cbe9154c20f/output/res/raw/gtm_analytics"
     },
     {
-        "merged": "/home/human/malhar_stefan/MHML/app/build/intermediates/res/merged/debug/raw/shape_predictor_68_face_landmarks.dat",
-        "source": "/home/human/malhar_stefan/MHML/app/src/main/res/raw/shape_predictor_68_face_landmarks.dat"
+        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/raw/lbpcascade_frontalface.xml",
+        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/raw/lbpcascade_frontalface.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/MHML/app/build/intermediates/res/merged/debug/raw/haarcascade_frontalface_alt.xml",
-        "source": "/home/human/malhar_stefan/MHML/app/src/main/res/raw/haarcascade_frontalface_alt.xml"
+        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/raw/haarcascade_lefteye_2splits.xml",
+        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/raw/haarcascade_lefteye_2splits.xml"
+    },
+    {
+        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/raw/shape_predictor_68_face_landmarks.dat",
+        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/raw/shape_predictor_68_face_landmarks.dat"
     }
 ]

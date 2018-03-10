@@ -155,7 +155,12 @@ public class NoiseRecorder extends Service{
             //amp = RanNum.nextDouble();
             amp = mRecorder.getMaxAmplitude();
             thenumber = String.valueOf(amp);
-            Log.d(debugTag,"maxAmp =" + thenumber);
+            //Log.d(debugTag,"maxAmp =" + thenumber);
+
+            // Broadcast message using implicit intent.
+            sendMessageToActivity(amp);
+
+
             prevdB = dBvalue;
             dBvalue = 20*Math.log10(amp/32768);
             //String abevent = abonormalevents(prevdB,dBvalue);
@@ -164,7 +169,7 @@ public class NoiseRecorder extends Service{
             //    a++;
             //}
             try {
-                Thread.sleep(50);
+                Thread.sleep(200);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -216,15 +221,15 @@ public class NoiseRecorder extends Service{
     }
     */
 
-    /*
+
     private void sendMessageToActivity(double Decibels) {
-        Intent intent = new Intent("Decibel Updates");
+        Intent intent = new Intent("com.app.StudyBuddy.DECIBELS");
         // You can also include some extra data.
-        intent.putExtra("Current Decibels", Decibels);
-        intent.putExtra("Abnormal Events", abnormalarray);
-        intent.putExtra("Session average decibels", );
+        intent.putExtra("CurrentDecibels", Decibels);
+        //intent.putExtra("Abnormal Events", abnormalarray);
+        //intent.putExtra("Session average decibels", );
         LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
     }
-    */
+
 
 }

@@ -13,7 +13,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
@@ -49,12 +48,13 @@
         <activity
             android:name=".SessionCountDown"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".StudySession" />
 
         <service
             android:name=".NoiseRecorder"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <activity android:name=".SessionSummary"></activity>
     </application>
 
 </manifest>

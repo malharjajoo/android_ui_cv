@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/human/malhar_stefan/MHML/dlib/src/main/shaders"/></dataSet><dataSet config="release"><source path="/home/human/malhar_stefan/MHML/dlib/src/release/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/human/malhar_stefan/android_ui_cv/dlib/src/main/shaders"/></dataSet><dataSet config="release"><source path="/home/human/malhar_stefan/android_ui_cv/dlib/src/release/shaders"/></dataSet></merger>

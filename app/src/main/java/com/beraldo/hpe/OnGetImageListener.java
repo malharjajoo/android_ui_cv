@@ -832,7 +832,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
 
 
                         cv_data.add(mOutputState);
-                        Log.d(debugTag,"cv data =" + cv_data.get(cv_data.size()-1));
+                        //Log.d(debugTag,"cv data =" + cv_data.get(cv_data.size()-1));
 
                     }
 

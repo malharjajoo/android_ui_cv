@@ -7,9 +7,11 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.graphics.ImageFormat;
 import android.graphics.Matrix;
@@ -33,6 +35,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.SystemClock;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
@@ -66,49 +69,29 @@ import hugo.weaving.DebugLog;
 
 
 
-
-
-
-
-
-
 public class CameraConnectionFragment extends Fragment {
 
 
     private MySession mySession;
     private String debugTag;
-    public enum SessionState {CREATED, STARTED, PAUSED, STOPPED;}
+    public enum SessionState {CREATED, STARTED, PAUSED, STOPPED;} ;
+    public ArrayList<Integer> noise_data_raw; // raw Mic data.
 
-    // Data obtained from CV module.
-    public class TimestampedGazeState
-    {
-        public OnGetImageListener.State state;
-        public String time;
 
-        public TimestampedGazeState(OnGetImageListener.State state, String time)
-        {
-            this.state = state;
-            this.time = time;
+    private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            // Get extra data included in the Intent
+            double decibels= -1.0; // default values
+            double noise_amp_d = intent.getDoubleExtra("CurrentDecibels", decibels);
+            int noise_amp_int = (int)noise_amp_d;
+            //Log.d(debugTag,"amp value received = " + String.valueOf(noise_amp_int));
+            noise_data_raw.add(noise_amp_int);
+
         }
-    }
+    };
 
-    // Data obtained from Noise Tracker.
-    public class TimestampedNoiseData
-    {
-        public NoiseTracker.NoiseData noiseData;
-        public String time;
-
-        public TimestampedNoiseData(NoiseTracker.NoiseData noiseData, String time)
-        {
-            this.noiseData = noiseData;
-            this.time = time;
-        }
-
-        public NoiseTracker.NoiseData getNoiseData()
-        {
-            return noiseData;
-        }
-    }
 
 
     // Abstract away details of time calculations.
@@ -180,16 +163,16 @@ public class CameraConnectionFragment extends Fragment {
     }
 
 
+    /*
     // Android Parcelable needs to be implemented to pass data between activities.
     // It is an (optimized) alternative to Java Serializable. Check link below.
     // https://stackoverflow.com/questions/3323074/android-difference-between-parcelable-and-serializable
     public static class Summary implements Parcelable
     {
-        //TODO: add other sensors later.
+
         public StatsEngine.StatsSummary statsSummary;
         public String sessionDuration;
 
-        //TODO: add other sensors later.
         public Summary(StatsEngine.StatsSummary statsSummary, String sessionDuration)
         {
             this.statsSummary = statsSummary;
@@ -225,7 +208,7 @@ public class CameraConnectionFragment extends Fragment {
             parcel.writeString(sessionDuration);
         }
     }
-
+*/
 
     // This class encapsulates a timer, associated buttons
     // and interaction with the sensors.
@@ -235,29 +218,30 @@ public class CameraConnectionFragment extends Fragment {
         private Button stopButton;
         private Timer timer;
 
-        private StudySession.SessionState sessionState;
+        private SessionState sessionState;
 
-
-        private ArrayList<OnGetImageListener.State> cv_data_raw; // reference to CV module
-        private ArrayList<Integer> noise_data_raw; //reference to Mic module.
-
-        //private StatsEngine statsEngine;
-        private List<TimestampedGazeState> cv_data;
-        private List<TimestampedNoiseData> noise_data;
+        private ArrayList<OnGetImageListener.State> cv_data_raw; // raw CV data
+        public String sessionStartTime;
+        public String sessionDuration;
 
 
 
-        public void initializeSession()
+        public void initializeSession(View view)
         {
-            this.sessionState = StudySession.SessionState.CREATED;
-            this.timer = new Timer( (Chronometer) findViewById(R.id.chronometer) );
-            this.initializeButtons();
+            this.sessionState = SessionState.CREATED;
+            this.timer = new Timer( (Chronometer) view.findViewById(R.id.chronometer) );
+
+            this.initializeButtons(view);
+            Log.d(debugTag, "Session initialized.");
+
+
         }
 
-        public void initializeButtons()
+        public void initializeButtons(View view)
         {
 
-            this.stopButton = (Button) findViewById(R.id.stop_button);
+            this.stopButton = (Button) view.findViewById(R.id.stop_button);
+
             this.stopButton.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View view) {
@@ -271,12 +255,11 @@ public class CameraConnectionFragment extends Fragment {
                     timer.chrono.setBase(SystemClock.elapsedRealtime());
 
                     // access CV values
-                    ArrayList<OnGetImageListener.State> cv_data = mOnGetPreviewListener.getStateList();
-                    // TODO: get values of the noise tracker !
-                    //for(int i =0, len = cv_data.size(); i < len ; ++i) {Log.d(debugTag, "cvdata = " + cv_data.get(i));}
+                    cv_data_raw = mOnGetPreviewListener.getStateList();
 
-                    appendTimeStamp();
-                    Log.d(debugTag, "Finished collecting sensor data ...");
+                    //for(int i =0, len = cv_data_raw.size(); i < len ; ++i) {Log.d(debugTag, "cvdata_raw = " + cv_data_raw.get(i));}
+                    //for(int i =0, len = noise_data_raw.size(); i < len ; ++i) {Log.d(debugTag, "noise_data_raw = " + String.valueOf(noise_data_raw.get(i)));}
+
                     stopSession();
 
                 }
@@ -284,33 +267,9 @@ public class CameraConnectionFragment extends Fragment {
         }
 
 
-        // This method keeps polling the sensors at a certain rate.
-        // It appends the timer values to the .
-        public void appendTimeStamp()
-        {
-            List cv_data = new ArrayList<TimestampedGazeState>();
-            // TODO: separate noise sensor data from CV sensors if different frequency required ?
-            List noise_data = new ArrayList<TimestampedNoiseData>();
-
-
-            // keep polling CV and sensor module at a certain frequency
-            // TODO: What should be the frequency? and how to enforce it ? will depend on each sensor ...
-            for(int i=0; i < 100 ; ++i)
-            {
-                String time = this.timer.getCurrentTime();
-                cv_data.add(new TimestampedGazeState(cv_data_raw.get(i),time));
-                noise_data.add(new TimestampedNoiseData(noise_data_raw.get(i),time));
-            }
-
-            this.cv_data = cv_data;
-            this.noise_data = noise_data;
-        }
-
-
-
         public void startBackgroundThread()
         {
-            // start noise servivce
+            // start noise service using explicit intent.
             Intent recorderIntent = new Intent(getActivity(),NoiseRecorder.class);
             getActivity().startService(recorderIntent);
         }
@@ -330,9 +289,10 @@ public class CameraConnectionFragment extends Fragment {
         {
             // Extra layer of safety. Already ensured by disabling appropriate button.
             // Ensure state change is appropriate.
-            if(sessionState == StudySession.SessionState.CREATED)
+            if(sessionState == SessionState.CREATED)
             {
-                this.sessionState = StudySession.SessionState.STARTED;
+                this.sessionState = SessionState.STARTED;
+                this.sessionStartTime = this.timer.getDateAndTime();
                 Log.d(debugTag, "Session started ...");
 
             }
@@ -343,43 +303,45 @@ public class CameraConnectionFragment extends Fragment {
         // On stop button click.
         public void stopSession()
         {
-            if(this.sessionState == StudySession.SessionState.STARTED)
+            if(this.sessionState == SessionState.STARTED)
             {
-                String sessionDuration = this.timer.getDuration();
+                this.sessionDuration = this.timer.getDuration();
 
-                // TODO: If using background threads, signal sensors to STOP.
-
-                this.sessionState = StudySession.SessionState.STOPPED;
+                this.sessionState = SessionState.STOPPED;
 
                 // Pass on data to Summary Activity.
                 // need to serialize the Summary Object and pass.
                 StatsEngine statsEngine = new StatsEngine();
-                StatsEngine.StatsSummary statsSummary = statsEngine.getSummary(this.cv_data, this.noise_data);
+                StatsEngine.StatsSummary statsSummary = statsEngine.getSummary(this.cv_data_raw, noise_data_raw,
+                                                                            this.sessionStartTime,this.sessionDuration);
 
-                //For now only filling Stats Data. Add other sensors summary later.
-                Summary summary = new Summary(statsSummary,sessionDuration);
+                //Send data to Firebase.
+                // storeToFirebase(statsSummary);
 
-                sendSummaryForDisplay(summary);
+                sendSummaryForDisplay(statsSummary);
 
-                Log.d(debugTag, "Session Stopped ! ...");
             }
 
 
         }
 
+        /*
+        public void storeToFirebase(StatsEngine.StatsSummary statsSummary)
+        {
 
+        }
+        */
 
         // Summary is sent for display (after the session is stopped)
-        public void sendSummaryForDisplay(Summary summary)
+        public void sendSummaryForDisplay(StatsEngine.StatsSummary summary)
         {
-            Intent intent = new Intent(StudySession.this, SessionSummary.class );
+            Log.d(debugTag,"Sending summary for display now..");
+
+            Intent intent = new Intent(getActivity(), SessionSummary.class );
             intent.putExtra("Summary",summary);
             startActivity(intent);
+
         }
-
-
-
-
 
     }
 
@@ -668,7 +630,8 @@ public class CameraConnectionFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
+    public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState)
+    {
 
         this.debugTag = getResources().getString(R.string.debugTag);
         return inflater.inflate(R.layout.camera_connection_fragment, container, false);
@@ -677,11 +640,12 @@ public class CameraConnectionFragment extends Fragment {
 
     @Override
     public void onViewCreated(final View view, final Bundle savedInstanceState) {
-        Log.d(debugTag, "Started integrated StudySession  ...");
+        Log.d(debugTag, "Started StudySession  ...");
 
         this.mySession = new MySession();
         // intializes session state and button event handlers.
-        mySession.initializeSession();
+        mySession.initializeSession(view);
+        this.noise_data_raw = new ArrayList<Integer>();
 
         textureView = (AutoFitTextureView) view.findViewById(R.id.texture);
         mPerformanceView = (TextView) view.findViewById(R.id.performance_tv);
@@ -699,7 +663,13 @@ public class CameraConnectionFragment extends Fragment {
     public void onResume() {
         super.onResume();
         startBackgroundThread();
+        this.mySession.startSession();
         this.mySession.startBackgroundThread();
+
+        LocalBroadcastManager.getInstance(getActivity()).registerReceiver(mMessageReceiver, new IntentFilter("com.app.StudyBuddy.DECIBELS"));
+
+        //Log.d(debugTag, "Initialized Broadcast Receive inside resume");
+
 
         // When the screen is turned off and turned back on, the SurfaceTexture is already
         // available, and "onSurfaceTextureAvailable" will not be called. In that case, we can open

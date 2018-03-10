@@ -23,6 +23,8 @@
             android:textColor="@android:color/white"
             android:textSize="@dimen/text_medium" />
 
+
+
         <TextView
             android:id="@+id/results_tv"
             android:layout_width="0dp"
@@ -46,18 +48,29 @@
         android:orientation="horizontal"
         android:layout_gravity="bottom">
 
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/stop_button"
+            android:layout_alignStart="@+id/stop_button"
+            android:layout_marginBottom="40dp"
+            android:textColor="#000"
+            android:textSize="50dp" />
+
+
         <Button
             android:id="@+id/stop_button"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/start_button"
+            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/start_button"
-            android:layout_marginBottom="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="128dp"
             android:background="@drawable/rounded_button"
             android:text="  Stop Session "
             android:textColor="@color/white" />
-
 
 
     </RelativeLayout>

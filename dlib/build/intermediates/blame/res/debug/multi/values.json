@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "outputFile": "/home/human/malhar_stefan/android_ui_cv/dlib/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -3659,7 +3659,7 @@
                     "endOffset": 32869
                 },
                 "from": {
-                    "file": "/home/human/malhar_stefan/MHML/dlib/src/main/res/values/strings.xml",
+                    "file": "/home/human/malhar_stefan/android_ui_cv/dlib/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 1,
                         "startColumn": 4,

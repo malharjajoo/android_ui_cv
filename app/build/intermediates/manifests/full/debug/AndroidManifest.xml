@@ -19,6 +19,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
     <!-- Optional permission for Analytics to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions required for GCM -->
@@ -43,10 +45,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar" >
         <activity
-            android:name="com.beraldo.hpe.MainActivity_"
+            android:name="com.beraldo.hpe.MainActivity"
             android:configChanges="screenSize"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -62,6 +63,20 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.beraldo.hpe.Permissions_"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.beraldo.hpe.SessionCountDown"
+            android:configChanges="orientation|screenSize" />
+
+        <service
+            android:name="com.beraldo.hpe.NoiseRecorder"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.beraldo.hpe.SessionSummary" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

@@ -1,38 +1,38 @@
 [
     {
-        "merged": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_tint_default.xml"
-    },
-    {
-        "merged": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_color_highlight_material.xml"
-    },
-    {
-        "merged": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "merged": "/home/human/malhar_stefan/android_ui_cv/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
         "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_tint_switch_track.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_tint_edittext.xml"
+        "merged": "/home/human/malhar_stefan/android_ui_cv/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "merged": "/home/human/malhar_stefan/android_ui_cv/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
         "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_tint_spinner.xml"
-    },
-    {
-        "merged": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "merged": "/home/human/malhar_stefan/android_ui_cv/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
         "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_tint_switch_thumb.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "merged": "/home/human/malhar_stefan/android_ui_cv/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/human/malhar_stefan/android_ui_cv/dlib/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
         "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/MHML/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_tint_btn_checkable.xml"
+        "merged": "/home/human/malhar_stefan/android_ui_cv/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/human/malhar_stefan/android_ui_cv/dlib/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/human/malhar_stefan/android_ui_cv/dlib/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color-v23/abc_color_highlight_material.xml"
     }
 ]

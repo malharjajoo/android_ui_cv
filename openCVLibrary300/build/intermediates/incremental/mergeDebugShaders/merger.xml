@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/human/malhar_stefan/MHML/openCVLibrary300/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/home/human/malhar_stefan/MHML/openCVLibrary300/src/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/human/malhar_stefan/android_ui_cv/openCVLibrary300/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/home/human/malhar_stefan/android_ui_cv/openCVLibrary300/src/debug/shaders"/></dataSet></merger>
