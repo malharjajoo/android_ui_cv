@@ -1,86 +1,110 @@
 [
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_primary_text_disable_only_material_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/switch_thumb_material_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/switch_thumb_material_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_tint_switch_track.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/73162f7bc5c1fa9a9c2bf2813ce5747dbf237375/output/res/color/wallet_secondary_text_holo_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
-        "source": "/home/human/.android/build-cache/51bee7d2c9a7603afd8c4e798b69480ecadbb212/output/res/color/wallet_primary_text_holo_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
-        "source": "/home/human/.android/build-cache/fed5de2508ff647b1c6938cabf45eb30f1c87e72/output/res/color/common_google_signin_btn_text_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_tint_seek_thumb.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/color/common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_primary_text_material_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/color/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_tint_btn_checkable.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_search_url_text.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_primary_text_material_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_tint_switch_thumb.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_tint_switch_track.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_tint_edittext.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_secondary_text_material_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_tint_default.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/73162f7bc5c1fa9a9c2bf2813ce5747dbf237375/output/res/color/wallet_primary_text_holo_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_primary_text_material_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
-        "source": "/home/human/.android/build-cache/51bee7d2c9a7603afd8c4e798b69480ecadbb212/output/res/color/wallet_secondary_text_holo_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_btn_colored_text_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/switch_thumb_material_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_tint_edittext.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_secondary_text_material_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/design_error.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/9c3946d45466415765d378ac0c4f62044e190ca5/output/res/color/design_error.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
-        "source": "/home/human/.android/build-cache/fed5de2508ff647b1c6938cabf45eb30f1c87e72/output/res/color/common_google_signin_btn_text_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_btn_colored_borderless_text_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/color/common_google_signin_btn_tint.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_tint_default.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_hint_foreground_material_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/color/abc_tint_spinner.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/design_tint_password_toggle.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/9c3946d45466415765d378ac0c4f62044e190ca5/output/res/color/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/color/abc_primary_text_disable_only_material_dark.xml"
     }
 ]

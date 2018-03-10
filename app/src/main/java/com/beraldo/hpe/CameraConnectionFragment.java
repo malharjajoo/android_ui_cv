@@ -27,13 +27,13 @@ import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.TotalCaptureResult;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.ImageReader;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
-import android.os.Parcel;
-import android.os.Parcelable;
 import android.os.SystemClock;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
@@ -49,39 +49,54 @@ import android.widget.Chronometer;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
+import com.beraldo.hpe.StatsEngine.StatsSummary;
+import com.beraldo.hpe.utils.XMLReader;
+import com.beraldo.hpe.view.AutoFitTextureView;
+import com.google.android.gms.wearable.DataClient;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import com.google.android.gms.common.data.FreezableUtils;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.wearable.DataEvent;
+import com.google.android.gms.wearable.DataEventBuffer;
+import com.google.android.gms.wearable.DataMap;
+import com.google.android.gms.wearable.DataMapItem;
+import com.google.android.gms.wearable.MessageEvent;
+import com.google.android.gms.wearable.Wearable;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.android.gms.wearable.DataEvent;
+import com.google.android.gms.wearable.MessageClient;
+
+
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
-
-import com.beraldo.hpe.utils.XMLReader;
-import com.beraldo.hpe.view.AutoFitTextureView;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 import hugo.weaving.DebugLog;
-import com.beraldo.hpe.StatsEngine.StatsSummary;
 
 
 
 
 
-public class CameraConnectionFragment extends Fragment {
+public class CameraConnectionFragment extends Fragment implements DataClient.OnDataChangedListener, MessageClient.OnMessageReceivedListener{
 
 
     private MySession mySession;
     private String debugTag;
     public enum SessionState {CREATED, STARTED, PAUSED, STOPPED;} ;
+    final static private String HR_PATH = "/heartrate";
     public ArrayList<Integer> noise_data_raw; // raw Mic data.
+    public ArrayList<Integer> heart_data_raw; // raw heartbeat data.
+
 
 
     private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
@@ -661,6 +676,9 @@ public class CameraConnectionFragment extends Fragment {
         // intializes session state and button event handlers.
         mySession.initializeSession(view);
         this.noise_data_raw = new ArrayList<Integer>();
+        this.heart_data_raw = new ArrayList<Integer>();
+
+
 
         textureView = (AutoFitTextureView) view.findViewById(R.id.texture);
         mPerformanceView = (TextView) view.findViewById(R.id.performance_tv);
@@ -682,6 +700,14 @@ public class CameraConnectionFragment extends Fragment {
         this.mySession.startBackgroundThread();
 
         LocalBroadcastManager.getInstance(getActivity()).registerReceiver(mMessageReceiver, new IntentFilter("com.app.StudyBuddy.DECIBELS"));
+        Wearable.getDataClient(getActivity()).addListener(this).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Log.i(debugTag,"Success client connected");
+            }
+        });
+
+        Wearable.getDataClient(getActivity()).addListener(this );
 
         //Log.d(debugTag, "Initialized Broadcast Receive inside resume");
 
@@ -702,7 +728,28 @@ public class CameraConnectionFragment extends Fragment {
         closeCamera();
         stopBackgroundThread();
         this.mySession.stopBackgroundThread();
+        Wearable.getDataClient(getActivity()).removeListener(this);
         super.onPause();
+    }
+
+    public void onDataChanged(@NonNull DataEventBuffer dataEventBuffer){
+        final List<DataEvent> events = FreezableUtils.freezeIterable(dataEventBuffer);
+        for(DataEvent event:events){
+            final Uri uri = event.getDataItem().getUri();
+            final String path = uri!=null ? uri.getPath() : null;
+            if(HR_PATH.equals(path)){
+                final DataMap map = DataMapItem.fromDataItem(event.getDataItem()).getDataMap();
+                int HeartBeat = map.getInt("Heart Rate");
+                heart_data_raw.add(HeartBeat);
+                System.out.println(HeartBeat);
+                Log.v(debugTag, Integer.toString(HeartBeat));
+            }
+        }
+    }
+
+    @Override
+    public void onMessageReceived(@NonNull MessageEvent messageEvent) {
+
     }
 
     /**

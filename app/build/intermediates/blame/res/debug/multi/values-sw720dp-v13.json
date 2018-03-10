@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-v13/values-sw720dp-v13.xml",
+        "outputFile": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-v13/values-sw720dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/values-sw720dp-v13/values-sw720dp-v13.xml",
+                    "file": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/values-sw720dp-v13/values-sw720dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 188
                 },
                 "from": {
-                    "file": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/values-sw720dp-v13/values-sw720dp-v13.xml",
+                    "file": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/values-sw720dp-v13/values-sw720dp-v13.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,

@@ -41,14 +41,14 @@ apply plugin: 'com.neenbedankt.android-apt'
 def AAVersion = '4.1.0'
 
 dependencies {
-    compile 'com.google.firebase:firebase-database:11.0.4'
+    compile 'com.google.firebase:firebase-database:11.8.0'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     apt "org.androidannotations:androidannotations:$AAVersion"
     compile "org.androidannotations:androidannotations-api:$AAVersion"
     compile "com.android.support:appcompat-v7:${rootProject.ext.androidSupportSdkVersion}"
     compile project(':dlib')
-    //compile "com.google.android.gms:play-services:${rootProject.ext.androidPlayServicesVersion}"
+    compile "com.google.android.gms:play-services:11.8.0"
     compile project(':openCVLibrary300')
     compile 'org.tensorflow:tensorflow-android:+'
 

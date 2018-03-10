@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.jakewharton.hugo:hugo-runtime-1.2.1">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/c42741eb71fb621e1b18bedc3a8aef9651499d89/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/c42741eb71fb621e1b18bedc3a8aef9651499d89/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b1527e8ad1acafc0e62e28448667080720c01b61/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b1527e8ad1acafc0e62e28448667080720c01b61/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

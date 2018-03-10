@@ -1,6 +1,22 @@
 [
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
-        "source": "/home/human/.android/build-cache/c5e675fab6f7d6e5ba7b8a45b8a2b967e13ac2f9/output/res/layout-v21/place_autocomplete_fragment.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/c0532b9aaa907bfe217956144591aacaf5885398/output/res/layout-v21/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/layout-v21/notification_template_custom_big.xml"
     }
 ]

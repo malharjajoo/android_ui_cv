@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
+        "outputFile": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 125
                 },
                 "from": {
-                    "file": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/values-v22/values-v22.xml",
+                    "file": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/values-v22/values-v22.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 212
                 },
                 "from": {
-                    "file": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/values-v22/values-v22.xml",
+                    "file": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/values-v22/values-v22.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -50,7 +50,7 @@
                     "endOffset": 548
                 },
                 "from": {
-                    "file": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/values-v22/values-v22.xml",
+                    "file": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/values-v22/values-v22.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -71,7 +71,7 @@
                     "endOffset": 896
                 },
                 "from": {
-                    "file": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/values-v22/values-v22.xml",
+                    "file": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/values-v22/values-v22.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,

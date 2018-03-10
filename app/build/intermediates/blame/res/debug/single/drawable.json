@@ -1,418 +1,494 @@
 [
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_switch_thumb_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_skip_next.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_skip_next.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_skip_previous.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_expanded_controller_skip_previous.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_skip_next.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_skip_next.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_on_light.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_media_route_on_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_stop.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_expanded_controller_stop.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_seekbar_thumb_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_mute.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_mute.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_rewind30.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_expanded_controller_rewind30.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_dialog_close_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_dialog_close_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/studybuddy.png",
-        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/drawable/studybuddy.png"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_closed_caption.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_expanded_controller_closed_caption.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/heart.png",
-        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/drawable/heart.png"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_text_cursor_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_play_large.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_play_large.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_dark.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_media_route_connecting_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_rewind30.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_rewind30.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_rewind30.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_rewind30.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_text_light_focused.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_ic_go_search_api_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/notification_tile_bg.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_vector_test.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_play_large.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_play_large.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_stop.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_expanded_controller_stop.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_stop_large.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_stop_large.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_seekbar_thumb.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_expanded_controller_seekbar_thumb.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/speaker.png",
-        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/drawable/speaker.png"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_media_play_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_media_play_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_ic_menu_overflow_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_skip_prev.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_skip_prev.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_light.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_cast_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_stop_live_stream.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_stop_live_stream.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_play.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_expanded_controller_play.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_ratingbar_small_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_dialog_close_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_dialog_close_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_mute.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_mute.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_item_background_holo_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_rewind30.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_expanded_controller_rewind30.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_spinner_textfield_background_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_play.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_play.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/side_nav_bar.xml",
-        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/drawable/side_nav_bar.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/rounded_button.xml",
+        "source": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/src/main/res/drawable/rounded_button.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/rounded_button.xml",
-        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/drawable/rounded_button.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_switch_thumb_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_play.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_play.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/9c3946d45466415765d378ac0c4f62044e190ca5/output/res/drawable/design_fab_background.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_actionbar_bg_gradient_light.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_expanded_controller_actionbar_bg_gradient_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_ratingbar_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_pause.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_pause.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_forward.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_forward.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_forward30.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_forward30.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/design_ic_visibility.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/9c3946d45466415765d378ac0c4f62044e190ca5/output/res/drawable/design_ic_visibility.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_skip_next.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_expanded_controller_skip_next.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_icon_disabled.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_play.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_expanded_controller_play.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_skip_prev.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_skip_prev.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_closed_caption.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_expanded_controller_closed_caption.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_on_dark.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_media_route_on_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_vol_type_audiotrack_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_vol_type_audiotrack_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_tab_indicator_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_cab_background_top_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/speaker.png",
+        "source": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/src/main/res/drawable/speaker.png"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
-        "source": "/home/human/.android/build-cache/fed5de2508ff647b1c6938cabf45eb30f1c87e72/output/res/drawable/common_google_signin_btn_icon_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_skip_next.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_skip_next.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_btn_borderless_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_mute.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_expanded_controller_mute.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
-        "source": "/home/human/.android/build-cache/fed5de2508ff647b1c6938cabf45eb30f1c87e72/output/res/drawable/common_google_signin_btn_text_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/studybuddy.png",
+        "source": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/src/main/res/drawable/studybuddy.png"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/ic_collapse.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/ic_collapse.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_rewind30.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_rewind30.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_stop.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_stop.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
-        "source": "/home/human/.android/build-cache/fed5de2508ff647b1c6938cabf45eb30f1c87e72/output/res/drawable/common_google_signin_btn_text_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/keepcalmstudy.jpg",
+        "source": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/src/main/res/drawable/keepcalmstudy.jpg"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_rewind.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_rewind.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/signup.jpg",
+        "source": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/src/main/res/drawable/signup.jpg"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_mini_controller_gradient_light.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_mini_controller_gradient_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_skip_ad_label_border.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_skip_ad_label_border.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_btn_check_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_closed_caption.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_closed_caption.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_media_play_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_media_play_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/keepcalmstudy.jpg",
-        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/drawable/keepcalmstudy.jpg"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_stop_large.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_stop_large.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_ic_ab_back_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_disconnect.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_disconnect.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_pause.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_expanded_controller_pause.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/borderedtextview.xml",
+        "source": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/src/main/res/drawable/borderedtextview.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_dark.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_cast_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_button_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_button_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_ic_clear_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_small_icon.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_small_icon.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_list_selector_holo_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_seekbar_track.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_expanded_controller_seekbar_track.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_light.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_pause_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_closed_caption.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_closed_caption.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_forward10.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_forward10.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_button_connected_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_button_connected_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_skip_prev.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_skip_prev.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_skip_ad_label_border.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_skip_ad_label_border.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_forward30.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_expanded_controller_forward30.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_forward10.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_forward10.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_forward.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_forward.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_small_icon.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_small_icon.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_btn_radio_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_audiotrack_light.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_audiotrack_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_rewind.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_rewind.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_play.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_play.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_text_light_normal.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_skip_prev.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_skip_prev.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_list_selector_holo_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_text_dark_focused.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_rewind30.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_rewind30.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_btn_radio_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/side_nav_bar.xml",
+        "source": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/src/main/res/drawable/side_nav_bar.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_dialog_material_background_dark.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_dialog_material_background_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/heart.png",
+        "source": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/src/main/res/drawable/heart.png"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_pause.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_pause.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_actionbar_bg_gradient_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_expanded_controller_actionbar_bg_gradient_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_light.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_media_route_mono_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/notification_bg_low.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_close_light.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_close_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_forward30.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_forward30.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_text_cursor_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_bg_gradient_light.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_expanded_controller_bg_gradient_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_pause_large.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_pause_large.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/signup.jpg",
-        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/drawable/signup.jpg"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_stop_live_stream.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_stop_live_stream.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_button_connecting_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_button_connecting_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_light.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_media_route_connecting_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_dark.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_play_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_pause.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_pause.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_btn_default_mtrl_shape.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_rewind10.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_rewind10.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_pause_large.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_pause_large.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_button_connected_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_button_connected_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_close_dark.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_close_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_connecting.xml",
-        "source": "/home/human/.android/build-cache/2bb05c75f13ed945bdb8b9141f219d943285e1e5/output/res/drawable/cast_ic_notification_connecting.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_dialog_material_background.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_item_background_holo_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_disconnect.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_disconnect.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_skip_next.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_skip_next.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_forward30.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_mini_controller_forward30.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_ic_voice_search_api_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_group_collapse.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_group_collapse.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_seekbar_tick_mark_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_forward30.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_forward30.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
-        "source": "/home/human/.android/build-cache/fed5de2508ff647b1c6938cabf45eb30f1c87e72/output/res/drawable/common_google_signin_btn_icon_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_mini_controller_gradient_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_mini_controller_gradient_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_dialog_material_background.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_pause.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_expanded_controller_pause.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_ratingbar_indicator_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_play.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_play.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/ic_expand.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/ic_expand.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_button_connecting_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_button_connecting_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_mini_controller_progress_drawable.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_mini_controller_progress_drawable.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_media_pause_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_media_pause_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_seekbar_track_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_dialog_material_background_light.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_dialog_material_background_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/borderedtextview.xml",
-        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/drawable/borderedtextview.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_btn_check_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_media_pause_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_media_pause_dark.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_dark.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_pause_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_textfield_search_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_ratingbar_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_vol_type_audiotrack_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_vol_type_audiotrack_light.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_ic_search_api_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/9c3946d45466415765d378ac0c4f62044e190ca5/output/res/drawable/design_snackbar_background.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_vector_test.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_skip_previous.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_expanded_controller_skip_previous.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_rewind10.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_notification_rewind10.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_stop.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_mini_controller_stop.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/piechart.png",
-        "source": "/home/human/malhar_stefan/android_ui_cv/app/src/main/res/drawable/piechart.png"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_skip_next.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_expanded_controller_skip_next.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_textfield_search_material.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_dark.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_media_route_mono_dark.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_text_dark_normal.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_light.xml",
-        "source": "/home/human/.android/build-cache/81cbf3601baa57713add673b22d495156b561eee/output/res/drawable/mr_ic_play_light.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_ic_search_api_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_mute.xml",
-        "source": "/home/human/.android/build-cache/4967b8ae84b0864e2b96a3869b18e3e4bbb848e5/output/res/drawable/cast_ic_expanded_controller_mute.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "/home/human/malhar_stefan/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/home/human/.android/build-cache/6fa4f3f0d7bdbffa9bfb226413ca64f09e571a31/output/res/drawable/abc_cab_background_internal_bg.xml"
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/9c3946d45466415765d378ac0c4f62044e190ca5/output/res/drawable/navigation_empty_icon.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_dialog_material_background_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_button_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_button_light.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_connecting.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/60e92d9e15d61b8943504204e9dda5d48781c1ef/output/res/drawable/cast_ic_notification_connecting.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_group_expand.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_group_expand.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/69c10c95b573f491ce7b7c95150683053b6757f9/output/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/piechart.png",
+        "source": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/src/main/res/drawable/piechart.png"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_forward30.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_expanded_controller_forward30.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_bg_gradient_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_expanded_controller_bg_gradient_light.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/mr_dialog_material_background_light.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/5966ca00438edf8404fdbb3484885e86af4f9f2d/output/res/drawable/mr_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_pause.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_ic_notification_pause.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/3186d7351915b66e2868dae333a61b570e0b1a9b/output/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/Users/Afrazinator/Desktop/EE4/MHML/android_ui_cv/app/build/intermediates/res/merged/debug/drawable/cast_mini_controller_progress_drawable.xml",
+        "source": "/Users/Afrazinator/.android/build-cache/00d8afafa9e0bf16a65043aec027f06b14f19caf/output/res/drawable/cast_mini_controller_progress_drawable.xml"
     }
 ]
