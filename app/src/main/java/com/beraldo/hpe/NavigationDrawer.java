@@ -42,14 +42,14 @@ public class NavigationDrawer extends AppCompatActivity
         });
         */
 
-        Button startSessionButton = (Button) findViewById(R.id.startsession);
-        startSessionButton.setOnClickListener(new View.OnClickListener(){
+        //Button startSessionButton = (Button) findViewById(R.id.startsession);
+        /*startSessionButton.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
                 openCountDownActivity();
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

@@ -94,7 +94,7 @@ public class SessionSummary extends AppCompatActivity {
 
         // create a list of pie chart entries
         List<PieEntry> entries = new ArrayList<>();
-        entries.add(new PieEntry(summary.focussed_percent,"Focussed"));
+        entries.add(new PieEntry(summary.focussed_percent,"Focused"));
         entries.add(new PieEntry(summary.distracted_percent,"Distracted"));
         entries.add(new PieEntry(summary.notpresent_percent,"Not Present"));
 
@@ -102,10 +102,10 @@ public class SessionSummary extends AppCompatActivity {
 
         // just create a bunch of colours ...
         final int[] COLORS = {
-                Color.rgb(0,255,0),
-                Color.rgb(255,0,0),
-                Color.rgb(0,0,255),
-                Color.rgb(255,51,153)
+                Color.rgb(0x81,0xc7,0x84),
+                Color.rgb(0xff,0x8a,0x65),
+                Color.rgb(0x64,0xb5,0xf6),
+                //Color.rgb(255,51,153)
         };
         ArrayList<Integer> colors = new ArrayList<Integer>();
         for(int i = 0 ; i < entries.size() ; i++ )
