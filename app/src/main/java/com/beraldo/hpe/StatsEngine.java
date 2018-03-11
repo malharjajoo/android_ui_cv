@@ -215,21 +215,19 @@ public class StatsEngine
 
         //========== For HR description =====
         int len_hr = heart_data_raw.size();
-        int sum_hr = 0;
-        for(int i = 0; i < len_hr;i++) {
-            sum_hr = sum_hr + heart_data_raw.get(i);
+        if (len_hr == 0){
+            avg_hr = -1;
+        }else {
+            int sum_hr = 0;
+            for (int i = 0; i < len_hr; i++) {
+                sum_hr = sum_hr + heart_data_raw.get(i);
+            }
+            avg_hr = (float) sum_hr / (float) len_hr;
         }
-
-
-
         // Summarize the data.
-        focussed_percent = ((float) sum1/ (float) len1) * 100;
-        distracted_percent = ((float) sum2/ (float) len1) * 100;
+        focussed_percent = ((float) sum1 / (float) len1) * 100;
+        distracted_percent = ((float) sum2 / (float) len1) * 100;
         notpresent_percent = 100 - (focussed_percent + distracted_percent);
-
-        avg_hr = (float)sum_hr/(float)len_hr;
-
-
 
         return new StatsSummary(focussed_percent,distracted_percent,notpresent_percent,avg_noise,
                 avg_hr, avg_noise_description, description,startTime,sessionDuration);
