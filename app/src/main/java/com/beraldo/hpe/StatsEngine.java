@@ -84,6 +84,10 @@ public class StatsEngine
 
         // output from noise tracker
         public float avg_noise;
+        public String avg_noise_description;
+
+        // output from HR watch
+        public float avg_hr;
 
 
         public StatsSummary()
@@ -92,7 +96,7 @@ public class StatsEngine
         }
 
         public StatsSummary(float focussed_percent,float distracted_percent,
-                            float notPresent , float avgNoise, String description,
+                            float notPresent , float avgNoise, float avg_hr, String avg_noise_description, String description,
                             String startTime,String sessionDuration)
         {
             this.startTime = startTime;
@@ -104,6 +108,8 @@ public class StatsEngine
             this.notpresent_percent = notPresent;
 
             this.avg_noise = avgNoise;
+            this.avg_hr = avg_hr;
+            this.avg_noise_description = avg_noise_description;
         }
 
 
@@ -115,6 +121,8 @@ public class StatsEngine
             distracted_percent = in.readFloat();
             notpresent_percent = in.readFloat();
             avg_noise = in.readFloat();
+            avg_noise_description = in.readString();
+            avg_hr = in.readFloat();
         }
 
         @Override
@@ -126,6 +134,8 @@ public class StatsEngine
             dest.writeFloat(distracted_percent);
             dest.writeFloat(notpresent_percent);
             dest.writeFloat(avg_noise);
+            dest.writeFloat(avg_hr);
+            dest.writeString(avg_noise_description);
         }
 
         @Override
@@ -148,11 +158,13 @@ public class StatsEngine
 
 
     public StatsSummary getSummary(List<OnGetImageListener.State> cv_data_raw,
-                                   ArrayList<Integer> noise_data_raw,String startTime,String sessionDuration)
+                                   ArrayList<Integer> noise_data_raw, ArrayList<Integer> heart_data_raw, String startTime,String sessionDuration)
 
     {
         float focussed_percent, distracted_percent, notpresent_percent;
         float avg_noise;
+        float avg_hr;
+        String avg_noise_description;
         String description;
 
 
@@ -187,16 +199,40 @@ public class StatsEngine
             sum3 = sum3 + noise_data_raw.get(i);
         }
 
+        avg_noise = (float)sum3/(float)len2;
+
+        // ======= For noise description =======
+
+        if(avg_noise < 500){
+            avg_noise_description = "Quiet";
+        }
+        else if(avg_noise >= 500 && avg_noise <= 15000){
+            avg_noise_description = "Conversation Level";
+        }
+        else{
+            avg_noise_description = "Too Loud";
+        }
+
+        //========== For HR description =====
+        int len_hr = heart_data_raw.size();
+        int sum_hr = 0;
+        for(int i = 0; i < len_hr;i++) {
+            sum_hr = sum_hr + heart_data_raw.get(i);
+        }
+
+
+
         // Summarize the data.
         focussed_percent = ((float) sum1/ (float) len1) * 100;
         distracted_percent = ((float) sum2/ (float) len1) * 100;
         notpresent_percent = 100 - (focussed_percent + distracted_percent);
 
-        avg_noise = (float)sum3/(float)len2;
+        avg_hr = (float)sum_hr/(float)len_hr;
+
 
 
         return new StatsSummary(focussed_percent,distracted_percent,notpresent_percent,avg_noise,
-                description,startTime,sessionDuration);
+                avg_hr, avg_noise_description, description,startTime,sessionDuration);
 
     }
 

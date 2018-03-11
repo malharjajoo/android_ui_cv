@@ -77,7 +77,9 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
@@ -334,7 +336,7 @@ public class CameraConnectionFragment extends Fragment implements DataClient.OnD
                 // Pass on data to Summary Activity.
                 // need to serialize the Summary Object and pass.
                 StatsEngine statsEngine = new StatsEngine();
-                StatsSummary statsSummary = statsEngine.getSummary(this.cv_data_raw, noise_data_raw,
+                StatsSummary statsSummary = statsEngine.getSummary(this.cv_data_raw, noise_data_raw, heart_data_raw,
                                                                    this.sessionStartTime,this.sessionDuration);
 
                 //Send session summary to Firebase.
