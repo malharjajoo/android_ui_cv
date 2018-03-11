@@ -181,8 +181,6 @@ public class OnGetImageListener implements OnImageAvailableListener {
 
     Rect[] facesArrayTF;
 
-    private float userBias = 0f;
-
     private List<Classifier.Recognition> mappedRecognitions;
 
     private boolean lookingDown = true;
@@ -487,7 +485,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
                 ext_matchLoc = rec;
             }
         }catch(Exception e) {
-            Log.d("StudyBuddy", e.toString());
+            Log.d(debugTag, "Error in CV module =" + e.toString());
         }
 
     }
@@ -578,7 +576,6 @@ public class OnGetImageListener implements OnImageAvailableListener {
                  //FACE_RECT_COLOR, 2);
                 match_eye(eyearea_right, teplateR, method, true);
                 match_eye(eyearea_left, teplateL, method, false);
-                userBias += (ext_eyes_only_rect.y - ext_iris.y) / 5.0;
                 learn_frames++;
             } else {
                 // Learning finished, use the new templates for template
@@ -592,7 +589,6 @@ public class OnGetImageListener implements OnImageAvailableListener {
         }
 
         Log.i(TAG, String.format("Detected %d faces", mappedRecognitions.size()));
-        Log.i(TAG, String.format("User bias: %f", userBias));
 
     }
 
