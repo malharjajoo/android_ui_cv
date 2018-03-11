@@ -441,49 +441,53 @@ public class OnGetImageListener implements OnImageAvailableListener {
         if (mTemplate.cols() == 0 || mTemplate.rows() == 0) {
             return ;
         }
-        Mat mResult = new Mat(result_cols, result_rows, CvType.CV_8U);
+        try {
+            Mat mResult = new Mat(result_cols, result_rows, CvType.CV_8U);
 
-        switch (type) {
-            case TM_SQDIFF:
-                Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_SQDIFF);
-                break;
-            case TM_SQDIFF_NORMED:
-                Imgproc.matchTemplate(mROI, mTemplate, mResult,
-                        Imgproc.TM_SQDIFF_NORMED);
-                break;
-            case TM_CCOEFF:
-                Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_CCOEFF);
-                break;
-            case TM_CCOEFF_NORMED:
-                Imgproc.matchTemplate(mROI, mTemplate, mResult,
-                        Imgproc.TM_CCOEFF_NORMED);
-                break;
-            case TM_CCORR:
-                Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_CCORR);
-                break;
-            case TM_CCORR_NORMED:
-                Imgproc.matchTemplate(mROI, mTemplate, mResult,
-                        Imgproc.TM_CCORR_NORMED);
-                break;
-        }
+            switch (type) {
+                case TM_SQDIFF:
+                    Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_SQDIFF);
+                    break;
+                case TM_SQDIFF_NORMED:
+                    Imgproc.matchTemplate(mROI, mTemplate, mResult,
+                            Imgproc.TM_SQDIFF_NORMED);
+                    break;
+                case TM_CCOEFF:
+                    Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_CCOEFF);
+                    break;
+                case TM_CCOEFF_NORMED:
+                    Imgproc.matchTemplate(mROI, mTemplate, mResult,
+                            Imgproc.TM_CCOEFF_NORMED);
+                    break;
+                case TM_CCORR:
+                    Imgproc.matchTemplate(mROI, mTemplate, mResult, Imgproc.TM_CCORR);
+                    break;
+                case TM_CCORR_NORMED:
+                    Imgproc.matchTemplate(mROI, mTemplate, mResult,
+                            Imgproc.TM_CCORR_NORMED);
+                    break;
+            }
 
-        Core.MinMaxLocResult mmres = Core.minMaxLoc(mResult);
-        // there is difference in matching methods - best match is max/min value
-        if (type == TM_SQDIFF || type == TM_SQDIFF_NORMED) {
-            matchLoc = mmres.minLoc;
-        } else {
-            matchLoc = mmres.maxLoc;
-        }
+            Core.MinMaxLocResult mmres = Core.minMaxLoc(mResult);
+            // there is difference in matching methods - best match is max/min value
+            if (type == TM_SQDIFF || type == TM_SQDIFF_NORMED) {
+                matchLoc = mmres.minLoc;
+            } else {
+                matchLoc = mmres.maxLoc;
+            }
 
-        org.opencv.core.Point matchLoc_tx = new org.opencv.core.Point(matchLoc.x + area.x, matchLoc.y + area.y);
-        org.opencv.core.Point matchLoc_ty = new org.opencv.core.Point(matchLoc.x + mTemplate.cols() + area.x,
-                matchLoc.y + mTemplate.rows() + area.y);
+            org.opencv.core.Point matchLoc_tx = new org.opencv.core.Point(matchLoc.x + area.x, matchLoc.y + area.y);
+            org.opencv.core.Point matchLoc_ty = new org.opencv.core.Point(matchLoc.x + mTemplate.cols() + area.x,
+                    matchLoc.y + mTemplate.rows() + area.y);
 
-        Imgproc.rectangle(mRgba, matchLoc_tx, matchLoc_ty, FACE_RECT_COLOR, 1);
-        Rect rec = new Rect(matchLoc_tx,matchLoc_ty);
+            Imgproc.rectangle(mRgba, matchLoc_tx, matchLoc_ty, FACE_RECT_COLOR, 1);
+            Rect rec = new Rect(matchLoc_tx, matchLoc_ty);
 
-        if(right){
-            ext_matchLoc = rec;
+            if (right) {
+                ext_matchLoc = rec;
+            }
+        }catch(Exception e) {
+            Log.d("StudyBuddy", e.toString());
         }
 
     }
