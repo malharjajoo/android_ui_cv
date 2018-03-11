@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "450374873786",
+    "firebase_url": "https://studybuddy-706d3.firebaseio.com",
+    "project_id": "studybuddy-706d3",
+    "storage_bucket": "studybuddy-706d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450374873786:android:3515877d1452cd1c",
+        "android_client_info": {
+          "package_name": "com.beraldo.hpe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450374873786-j7optav9ad5cm29kki0pd6bfslvrvs1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.beraldo.hpe",
+            "certificate_hash": "f44959fc10ef23b06e1eb4dcdddbb5a0942cf78f"
+          }
+        },
+        {
+          "client_id": "450374873786-a86lh1uuq0l158np2kfv3ei9vdbbo3tv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.beraldo.hpe",
+            "certificate_hash": "9e056744914304e0cddab2453673c16c373c798b"
+          }
+        },
+        {
+          "client_id": "450374873786-eb232osel1bqcrppuh34efhbsumpf6r0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3DEaGJ6PhxM7UPdEYXtWBf48S0lYQXpE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450374873786-eb232osel1bqcrppuh34efhbsumpf6r0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
