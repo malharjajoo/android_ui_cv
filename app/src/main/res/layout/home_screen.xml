@@ -8,6 +8,14 @@
     android:background="@color/lightblue"
     tools:context="com.beraldo.hpe.NavigationDrawer">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <TextView
         android:id="@+id/textView"
@@ -18,19 +26,19 @@
         android:layout_marginBottom="97dp"
         android:text="Write a description here..." />
 
- <!--
-    <Button
-        android:id="@+id/startsession"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="Start Session"
-        android:textColor="@color/white"
-        android:background="@drawable/rounded_button"
-        android:elevation="20dp"/>
-    -->
+    <!--
+       <Button
+           android:id="@+id/startsession"
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/textView"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="50dp"
+           android:text="Start Session"
+           android:textColor="@color/white"
+           android:background="@drawable/rounded_button"
+           android:elevation="20dp"/>
+       -->
 
 
     <ImageView

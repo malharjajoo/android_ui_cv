@@ -62,10 +62,21 @@ public class SessionHistory extends AppCompatActivity {
         for (int i=0; i<len;i++){
 
             StatsSummary curSession = fetchedData.get(i);
-            int icon = R.drawable.studybuddy;
-            //TODO:Create the "if" logic based on the duration to add the icons
-            //if (curSession.)
-            this.displayData.add(new SessionDisplay(curSession, icon));
+            //int icon = R.drawable.studybuddy;
+            String duration_str = curSession.sessionDuration;
+            String[] tokens = duration_str.split(":");
+            int hours = Integer.parseInt(tokens[0]);
+            int minutes = Integer.parseInt(tokens[1]);
+            int seconds = Integer.parseInt(tokens[2]);
+            int duration = 3600 * hours + 60 * minutes + seconds;
+            //Adding icons based on duration
+            if (duration < (30*60)) {
+                this.displayData.add(new SessionDisplay(curSession, R.drawable.notebook));
+            }else if (duration < (90*60)){
+                this.displayData.add(new SessionDisplay(curSession, R.drawable.agenda));
+            }else{
+                this.displayData.add(new SessionDisplay(curSession, R.drawable.bookshelf));
+            }
         }
 
     }
@@ -76,15 +87,17 @@ public class SessionHistory extends AppCompatActivity {
 
         public class SessionViewHolder extends RecyclerView.ViewHolder {
             CardView cv;
-            TextView sessionDuration;
+            TextView sessionDescription;
             TextView sessionValues;
+            TextView sessionDates;
             ImageView sessionIcon;
 
             SessionViewHolder(View itemView) {
                 super(itemView);
                 cv = (CardView)itemView.findViewById(R.id.cv);
-                sessionDuration = (TextView)itemView.findViewById(R.id.session_duration);
-                sessionValues = (TextView)itemView.findViewById(R.id.session_values);
+                sessionDescription = (TextView)itemView.findViewById(R.id.session_description);
+                sessionValues = (TextView)itemView.findViewById(R.id.session_levels);
+                sessionDates = (TextView)itemView.findViewById(R.id.session_times);
                 sessionIcon = (ImageView)itemView.findViewById(R.id.session_icon);
             }
         }
@@ -108,10 +121,27 @@ public class SessionHistory extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(SessionViewHolder SessionViewHolder, int i) {
-            SessionViewHolder.sessionDuration.setText(sessions.get(i).summary.sessionDuration);
-            SessionViewHolder.sessionValues.setText("Paying attention: " + sessions.get(i).summary.focussed_percent +
-                    "%\nNot paying attention: "+ sessions.get(i).summary.distracted_percent +
-                    "%\nNot present: "+sessions.get(i).summary.notpresent_percent);
+            float hrv = sessions.get(i).summary.avg_hr;
+            String hrv_str;
+            if (hrv == -1){
+                hrv_str = "Watch disconnected";
+            }else{
+                hrv_str = String.format(java.util.Locale.US,"%.0f", sessions.get(i).summary.avg_hr) + "bpm";
+            }
+            String date = sessions.get(i).summary.startTime;
+            String[] tokens = date.split(" ");
+
+            String date_vals = "\nDate: " + tokens[0] + "\nStart time: " + tokens[1] + "\nDuration: " + sessions.get(i).summary.sessionDuration;
+
+            String sensory_vals = "Focused: " + String.format(java.util.Locale.US,"%.2f", sessions.get(i).summary.focussed_percent) +
+                    "%\nDistracted: "+ String.format(java.util.Locale.US,"%.2f", sessions.get(i).summary.distracted_percent) +
+                    "%\nNot present: "+ String.format(java.util.Locale.US,"%.2f", sessions.get(i).summary.notpresent_percent) +
+                    "%\nNoise level: " + sessions.get(i).summary.avg_noise_description +
+                    "\nAverage heart rate: " + hrv_str;
+
+            SessionViewHolder.sessionDescription.setText(sessions.get(i).summary.description);
+            SessionViewHolder.sessionValues.setText(sensory_vals);
+            SessionViewHolder.sessionDates.setText(date_vals);
             SessionViewHolder.sessionIcon.setImageResource(sessions.get(i).iconId);
         }
 
@@ -128,6 +158,7 @@ public class SessionHistory extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
+        Log.d(debugTag,"In Session history Activity");
         this.summaryList = new ArrayList<StatsSummary>();
         this.displayData = new ArrayList<SessionDisplay>();
 

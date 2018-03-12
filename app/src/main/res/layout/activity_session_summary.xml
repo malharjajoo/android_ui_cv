@@ -17,7 +17,7 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
-  android:layout_height="300dp"
+  android:layout_height="250dp"
   android:orientation="horizontal"
   android:theme="@style/notitle"
   android:background="@color/lightblue"
@@ -67,11 +67,11 @@
      android:layout_height="wrap_content"
      android:layout_below="@+id/sessionsummarycontainer"
      android:layout_centerHorizontal="true"
-     android:layout_marginTop="30dp"
-     android:text="Home"
-     android:textColor="@color/white"
+     android:layout_marginTop="20dp"
      android:background="@drawable/rounded_button"
-     android:elevation="20dp"/>
+     android:elevation="20dp"
+     android:text="Home"
+     android:textColor="@color/white" />
 
  
 
