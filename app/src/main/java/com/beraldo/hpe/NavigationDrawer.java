@@ -50,7 +50,9 @@ public class NavigationDrawer extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        this.mDrawerLayout.openDrawer(GravityCompat.START);
         navigationView.setNavigationItemSelectedListener(this);
+
 
     }
 
