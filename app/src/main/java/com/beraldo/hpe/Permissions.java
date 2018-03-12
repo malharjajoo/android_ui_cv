@@ -5,15 +5,18 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -27,8 +30,11 @@ import com.beraldo.hpe.dlib.Constants;
 import com.beraldo.hpe.utils.FileUtils;
 import hugo.weaving.DebugLog;
 
-@EActivity(R.layout.activity_permissions)
+@EActivity()
 public class Permissions extends AppCompatActivity {
+
+    private String debugTag;
+    private static int OVERLAY_PERMISSION_REQ_CODE = 1;
 
     // Noise permission
     private String [] permissions = {Manifest.permission.RECORD_AUDIO};
@@ -85,6 +91,7 @@ public class Permissions extends AppCompatActivity {
     }
 
 
+
 /*
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -112,6 +119,9 @@ public class Permissions extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.debugTag = getResources().getString(R.string.debugTag);
+
+
         setSupportActionBar(mToolbar);
         // Just use hugo to print log
         isExternalStorageWritable();
@@ -170,6 +180,44 @@ public class Permissions extends AppCompatActivity {
         }
         FileUtils.savePreference(this, FileUtils.PARAMS_DIR_PREFS_NAME, params.getAbsolutePath());
 
+
+
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!Settings.canDrawOverlays(this.getApplicationContext())) {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + getPackageName()));
+                startActivityForResult(intent, OVERLAY_PERMISSION_REQ_CODE);
+            }else{
+                openCountDownActivity();
+            }
+        }else{
+            openCountDownActivity();
+        }
+
+
+    }
+    public void openCountDownActivity()
+    {
+        Intent intent = new Intent(this, SessionCountDown.class );
+        Log.d(debugTag, "Starting Countdown activity ...");
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == OVERLAY_PERMISSION_REQ_CODE) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (!Settings.canDrawOverlays(this.getApplicationContext())) {
+                    Toast.makeText(this, "PermissionsActivity\", \"SYSTEM_ALERT_WINDOW, permission not granted...", Toast.LENGTH_SHORT).show();
+                } else {
+                    //Intent intent = getIntent();
+                    finish();
+                    openCountDownActivity();
+
+
+                }
+            }
+        }
     }
 
     @AfterViews
@@ -198,8 +246,5 @@ public class Permissions extends AppCompatActivity {
         return false;
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-    }
+
 }

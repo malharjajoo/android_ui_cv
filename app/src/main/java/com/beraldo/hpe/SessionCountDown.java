@@ -51,7 +51,7 @@ public class SessionCountDown extends AppCompatActivity {
                 {
                     isRunning = false;
                     Log.d(debugTag,"Finished countdown timer !!...");
-                    openPermissionsActivity();
+                    openCameraActivity();
                 }
 
             }.start();
@@ -155,11 +155,11 @@ public class SessionCountDown extends AppCompatActivity {
     }
     */
 
-    public void openPermissionsActivity()
+    public void openCameraActivity()
     {
-        Intent intent = new Intent(SessionCountDown.this, Permissions_.class );
-        Log.d(debugTag, "Opening Permissions activity ...");
-        startActivity(intent);
+        Log.d(debugTag, "Opening Camera activity ...");
+        startActivity(new Intent(this, CameraActivity.class));
+
     }
 
 
