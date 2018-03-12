@@ -107,7 +107,7 @@ public class NavigationDrawer extends AppCompatActivity
 
         } else if (id == R.id.nav_newsession) {
 
-            openPermissionsActivity();
+            openCountDownActivity();
 
         } else if (id == R.id.nav_share) {
 
@@ -120,6 +120,12 @@ public class NavigationDrawer extends AppCompatActivity
         return true;
     }
 
+    public void openCountDownActivity()
+    {
+        Intent intent = new Intent(this, SessionCountDown.class );
+        Log.d(debugTag, "Starting Countdown activity ...");
+        startActivity(intent);
+    }
 
     public void openSessionHistoryActivity()
     {
@@ -127,13 +133,5 @@ public class NavigationDrawer extends AppCompatActivity
         startActivity(intent);
     }
 
-
-
-    public void openPermissionsActivity()
-    {
-        Intent intent = new Intent(this, Permissions_.class );
-        Log.d(debugTag, "Opening Permissions activity ...");
-        startActivity(intent);
-    }
 
 }

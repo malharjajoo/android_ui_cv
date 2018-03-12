@@ -40,6 +40,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.beraldo.hpe.dlib.Constants;
 import com.beraldo.hpe.dlib.HeadPoseDetector;
 import com.beraldo.hpe.dlib.HeadPoseGaze;
 
@@ -71,6 +72,12 @@ public class OnGetImageListener implements OnImageAvailableListener {
 
     public ArrayList<State> cv_data;
     private String debugTag;
+
+
+    public static int mode = Constants.MODE_ITERATIVE;
+    public static boolean saveFile = false;
+
+
 
     private static final int NUM_CLASSES = 1001;
     private static final int INPUT_SIZE = 240;
@@ -241,7 +248,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
         }
 
         // Initialize the headpose detector with its parameters
-        mHeadPoseDetector.init(model.getAbsolutePath(), Permissions.mode, intrinsics, distortions);
+        mHeadPoseDetector.init(model.getAbsolutePath(), this.mode, intrinsics, distortions);
 
         // Initialize the formatter for the strings to be shown
         df = new DecimalFormat("##.##");
@@ -249,7 +256,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
 
         tStart = System.currentTimeMillis();
 
-        if(Permissions.saveFile) detectionDocument = XMLWriter.newDocument(Permissions.mode);
+        if(this.saveFile) detectionDocument = XMLWriter.newDocument(this.mode);
 
         try {
             // load cascade file from application resources
@@ -323,7 +330,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
 
     public void deInitialize() {
         synchronized (OnGetImageListener.this) {
-            if(Permissions.saveFile) {// Update performance info and save the file
+            if(this.saveFile) {// Update performance info and save the file
                 XMLWriter.addTimePerformance(detectionDocument, overallTime / valid_cycles); // Add performance field
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
                 XMLWriter.saveDocumentToFile(mContext, detectionDocument, "detection_" + sdf.format(new Date(System.currentTimeMillis())) + ".xml");
@@ -788,7 +795,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
                             else
                                 mState = State.NOT_PAYING_ATTENTION;
 
-                            if (Permissions.saveFile)
+                            if (saveFile)
                                 XMLWriter.addResult(detectionDocument, System.currentTimeMillis(), r.getYaw(), r.getPitch(), r.getRoll());
 
                         }
