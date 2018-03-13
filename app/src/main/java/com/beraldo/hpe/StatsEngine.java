@@ -90,10 +90,10 @@ public class StatsEngine
         public float avg_hr;
 
 
-        public StatsSummary()
-        {
+        //public StatsSummary()
+        //{
 
-        }
+        //}
 
         public StatsSummary(float focussed_percent,float distracted_percent,
                             float notPresent , float avgNoise, float avg_hr, String avg_noise_description, String description,
@@ -121,8 +121,9 @@ public class StatsEngine
             distracted_percent = in.readFloat();
             notpresent_percent = in.readFloat();
             avg_noise = in.readFloat();
-            avg_noise_description = in.readString();
             avg_hr = in.readFloat();
+            avg_noise_description = in.readString();
+
         }
 
         @Override
