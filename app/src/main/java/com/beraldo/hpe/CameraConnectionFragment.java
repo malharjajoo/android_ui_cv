@@ -266,9 +266,8 @@ public class CameraConnectionFragment extends Fragment implements DataClient.OnD
 
             this.initializeButtons(view);
             Log.d(debugTag, "Session initialized.");
-
-
         }
+
 
         public void initializeButtons(View view)
         {
@@ -327,6 +326,10 @@ public class CameraConnectionFragment extends Fragment implements DataClient.OnD
                 this.sessionState = SessionState.STARTED;
                 this.sessionStartTime = this.timer.getDateAndTime();
                 this.sessionStartDayDateTime = this.timer.getDayDateAndTime();
+
+                this.timer.chrono.setBase(SystemClock.elapsedRealtime());
+                this.timer.chrono.start();
+
                 Log.d(debugTag, "Session started ...");
 
             }
