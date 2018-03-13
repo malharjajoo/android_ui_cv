@@ -39,7 +39,7 @@ public class SessionCountDown extends AppCompatActivity {
     private Button resetButton;
 
     // Create countdown timer (time is in millisec)
-    private long countdown_ms = 5000;
+    private long countdown_ms = 10000;
     private static int OVERLAY_PERMISSION_REQ_CODE = 1;
 
 
