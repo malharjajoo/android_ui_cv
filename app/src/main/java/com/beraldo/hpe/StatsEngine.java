@@ -58,10 +58,39 @@ public class StatsEngine
     // It returns a description of the session.
     public String makeInference(List<OnGetImageListener.State> cv_data_raw,
                               ArrayList<Integer> noise_data_raw,
-                                String startTime,String sessionDuration)
+                               String dayDateTime,String sessionDuration)
     {
         // TODO: split session duration equally among sensor data and create description.
-        String description = "Fill description";
+        String day = dayDateTime.substring(0,3);
+        String month = dayDateTime.substring(4, 4+3);
+        int hour = Integer.parseInt(dayDateTime.substring(11,11+2));
+        String time_of_day; //depends on ^hour
+        String dd = dayDateTime.substring(8,8+2);
+        String year = dayDateTime.substring(30,30+4);
+
+
+        Log.d(debugTag,"curren date and time=" + dayDateTime);
+        // Morning, afternoon , evening, night
+        if( hour < 10)
+        {
+            time_of_day = "Morning";
+        }else if(hour < 16)
+        {
+            time_of_day = "Afternoon";
+        }else if(hour < 20)
+        {
+            time_of_day = "Evening";
+        }
+        else if(hour < 4)
+        {
+            time_of_day = "Night";
+        }else
+        {
+            time_of_day = "Early morning";
+        }
+
+        String description = "Your " + day + " " + time_of_day + " session ("+dd + " " + month +"," +year+ ")" ;
+
         return description;
     }
 
@@ -90,10 +119,10 @@ public class StatsEngine
         public float avg_hr;
 
 
-        //public StatsSummary()
-        //{
+        public StatsSummary()
+        {
 
-        //}
+        }
 
         public StatsSummary(float focussed_percent,float distracted_percent,
                             float notPresent , float avgNoise, float avg_hr, String avg_noise_description, String description,
@@ -159,7 +188,9 @@ public class StatsEngine
 
 
     public StatsSummary getSummary(List<OnGetImageListener.State> cv_data_raw,
-                                   ArrayList<Integer> noise_data_raw, ArrayList<Integer> heart_data_raw, String startTime,String sessionDuration)
+                                   ArrayList<Integer> noise_data_raw, ArrayList<Integer> heart_data_raw,
+                                   String sessionStartTime,String sessionDuration, String dayDateTime)
+
 
     {
         float focussed_percent, distracted_percent, notpresent_percent;
@@ -170,7 +201,7 @@ public class StatsEngine
 
 
         // Divide session duration equally for sensor data.
-        description = makeInference(cv_data_raw, noise_data_raw,startTime, sessionDuration);
+        description = makeInference(cv_data_raw, noise_data_raw,dayDateTime, sessionDuration);
 
 
         // =========== For CV data ====================
@@ -231,7 +262,7 @@ public class StatsEngine
         notpresent_percent = 100 - (focussed_percent + distracted_percent);
 
         return new StatsSummary(focussed_percent,distracted_percent,notpresent_percent,avg_noise,
-                avg_hr, avg_noise_description, description,startTime,sessionDuration);
+                avg_hr, avg_noise_description, description,sessionStartTime,sessionDuration);
 
     }
 

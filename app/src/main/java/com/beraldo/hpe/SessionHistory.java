@@ -10,6 +10,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import com.beraldo.hpe.StatsEngine.StatsSummary;
@@ -52,6 +53,7 @@ public class SessionHistory extends AppCompatActivity {
             this.iconId = iconId;
         }
     }
+
 
     private void addIcons(List<StatsSummary> fetchedData){
 
@@ -205,6 +207,7 @@ public class SessionHistory extends AppCompatActivity {
                     summaryList.add(summary);
                 }
 
+                Collections.reverse(summaryList);
                 Log.d(debugTag, "entries = is: " + summaryList.size());
                 //Function dummy values for now and assign icons
                 addIcons(summaryList);

@@ -173,6 +173,14 @@ public class CameraConnectionFragment extends Fragment implements DataClient.OnD
             return new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
         }
 
+        // The format for this is - <Day of week> <month> <dd - Date> <time> <Year>
+        public String getDayDateAndTime()
+        {
+            // can change format if required by simply altering string.
+            Calendar cal = Calendar.getInstance();
+            return cal.getTime().toString();
+        }
+
         public String getDate()
         {
             // can change format if required by simply altering string.
@@ -246,6 +254,7 @@ public class CameraConnectionFragment extends Fragment implements DataClient.OnD
 
         private ArrayList<OnGetImageListener.State> cv_data_raw; // raw CV data
         public String sessionStartTime;
+        public String sessionStartDayDateTime;
         public String sessionDuration;
 
 
@@ -317,6 +326,7 @@ public class CameraConnectionFragment extends Fragment implements DataClient.OnD
             {
                 this.sessionState = SessionState.STARTED;
                 this.sessionStartTime = this.timer.getDateAndTime();
+                this.sessionStartDayDateTime = this.timer.getDayDateAndTime();
                 Log.d(debugTag, "Session started ...");
 
             }
@@ -337,7 +347,7 @@ public class CameraConnectionFragment extends Fragment implements DataClient.OnD
                 // need to serialize the Summary Object and pass.
                 StatsEngine statsEngine = new StatsEngine();
                 StatsSummary statsSummary = statsEngine.getSummary(this.cv_data_raw, noise_data_raw, heart_data_raw,
-                                                                   this.sessionStartTime,this.sessionDuration);
+                                                                   this.sessionStartTime,this.sessionDuration,this.sessionStartDayDateTime);
 
                 //Send session summary to Firebase.
                 storeToFirebase(statsSummary);

@@ -29,7 +29,7 @@
             android:id="@+id/session_description"
             android:layout_toRightOf="@+id/session_icon"
             android:layout_alignParentTop="true"
-            android:textSize="30sp"
+            android:textSize="20sp"
             />
 
         <TextView
