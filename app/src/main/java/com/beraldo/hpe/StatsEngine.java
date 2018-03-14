@@ -71,7 +71,7 @@ public class StatsEngine
 
         Log.d(debugTag,"curren date and time=" + dayDateTime);
         // Morning, afternoon , evening, night
-        if( hour < 10)
+        if( hour < 12)
         {
             time_of_day = "Morning";
         }else if(hour < 16)
