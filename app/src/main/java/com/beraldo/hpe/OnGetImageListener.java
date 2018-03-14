@@ -767,15 +767,15 @@ public class OnGetImageListener implements OnImageAvailableListener {
                             if (ext_matchLoc != null && ext_eyes_only_rect != null) {
                                 double match = ext_matchLoc.y;
                                 double eye_area = ext_eyes_only_rect.y;// + ext_eyes_only_rect.height / 8;
-                                org.opencv.core.Point match_p1 = new org.opencv.core.Point(0, ext_matchLoc.y);
-                                org.opencv.core.Point match_p2 = new org.opencv.core.Point(mPreviewWdith, ext_matchLoc.y);
+                                //org.opencv.core.Point match_p1 = new org.opencv.core.Point(0, ext_matchLoc.y);
+                                //org.opencv.core.Point match_p2 = new org.opencv.core.Point(mPreviewWdith, ext_matchLoc.y);
 
-                                org.opencv.core.Point eye_p1 = new org.opencv.core.Point(0, ext_eyes_only_rect.y);
-                                org.opencv.core.Point eye_p2 = new org.opencv.core.Point(mPreviewWdith, ext_eyes_only_rect.y);
-                                Utils.bitmapToMat(mRGBrotatedBitmap, mRgba);
-                                Imgproc.line(mRgba, match_p1, match_p2, FACE_RECT_COLOR, 2);
-                                Imgproc.line(mRgba, eye_p1, eye_p2, TF_FACE_RECT_COLOR, 2);
-                                Utils.matToBitmap(mRgba, mRGBrotatedBitmap);
+                                //org.opencv.core.Point eye_p1 = new org.opencv.core.Point(0, ext_eyes_only_rect.y);
+                                //org.opencv.core.Point eye_p2 = new org.opencv.core.Point(mPreviewWdith, ext_eyes_only_rect.y);
+                                //Utils.bitmapToMat(mRGBrotatedBitmap, mRgba);
+                                //Imgproc.line(mRgba, match_p1, match_p2, FACE_RECT_COLOR, 2);
+                                //Imgproc.line(mRgba, eye_p1, eye_p2, TF_FACE_RECT_COLOR, 2);
+                                //Utils.matToBitmap(mRgba, mRGBrotatedBitmap);
 
                                 if (mappedRecognitions.size() > 0) {
                                     if (ext_eyes_only_rect != null) {

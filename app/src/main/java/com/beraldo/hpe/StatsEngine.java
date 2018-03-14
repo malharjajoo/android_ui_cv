@@ -235,10 +235,10 @@ public class StatsEngine
 
         // ======= For noise description =======
 
-        if(avg_noise < 500){
+        if(avg_noise < 50){
             avg_noise_description = "Quiet";
         }
-        else if(avg_noise >= 500 && avg_noise <= 15000){
+        else if(avg_noise >= 50 && avg_noise <= 400){
             avg_noise_description = "Conversation Level";
         }
         else{
